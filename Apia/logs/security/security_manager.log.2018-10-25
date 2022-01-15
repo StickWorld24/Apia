@@ -1,0 +1,12 @@
+[ERROR] [25-10-2018 15:23:28] [MANAGER_LOGGER] - [2018-10-25,15:23:28](Thread:localhost-startStop-1-24509310) --> Connection refused: connect
+
+[ERROR] [25-10-2018 15:23:28] [MANAGER_LOGGER] - [2018-10-25,15:23:28](Thread:localhost-startStop-1-24509310) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [25-10-2018 15:23:30] [MANAGER_LOGGER] - [2018-10-25,15:23:30](Thread:localhost-startStop-1-24509310) --> Connection refused: connect
+
+[ERROR] [25-10-2018 15:34:09] [MANAGER_LOGGER] - [2018-10-25,15:34:09](Thread:localhost-startStop-1-26325964) --> Connection refused: connect
+
+[ERROR] [25-10-2018 15:34:09] [MANAGER_LOGGER] - [2018-10-25,15:34:09](Thread:localhost-startStop-1-26325964) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [25-10-2018 15:34:10] [MANAGER_LOGGER] - [2018-10-25,15:34:10](Thread:localhost-startStop-1-26325964) --> Connection refused: connect
+

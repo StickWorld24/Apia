@@ -1,0 +1,26 @@
+[ERROR] [04-06-2018 08:00:02] [MANAGER_LOGGER] - [2018-06-04,08:00:01](Thread:ApiaMonitor - SamplerDispatcher-29223891) --> Connection refused: connect
+
+[ERROR] [04-06-2018 08:00:02] [MANAGER_LOGGER] - [2018-06-04,08:00:02](Thread:ApiaMonitor - SamplerDispatcher-29223891) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [04-06-2018 08:00:03] [MANAGER_LOGGER] - [2018-06-04,08:00:03](Thread:ApiaMonitor - SamplerDispatcher-29223891) --> Connection refused: connect
+
+[ERROR] [04-06-2018 08:00:04] [MANAGER_LOGGER] - [2018-06-04,08:00:04](Thread:localhost-startStop-1-24316099) --> Connection refused: connect
+
+[ERROR] [04-06-2018 08:00:04] [MANAGER_LOGGER] - [2018-06-04,08:00:04](Thread:localhost-startStop-1-24316099) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [04-06-2018 08:00:05] [MANAGER_LOGGER] - [2018-06-04,08:00:05](Thread:localhost-startStop-1-24316099) --> Connection refused: connect
+
+[ERROR] [04-06-2018 08:00:13] [MANAGER_LOGGER] - [2018-06-04,08:00:13](Thread:ApiaMonitor - SamplerDispatcher-29223891) --> Connection is closed.
+
+[ERROR] [04-06-2018 14:18:16] [MANAGER_LOGGER] - [2018-06-04,14:18:16](Thread:localhost-startStop-1-11080380) --> Connection refused: connect
+
+[ERROR] [04-06-2018 14:18:16] [MANAGER_LOGGER] - [2018-06-04,14:18:16](Thread:localhost-startStop-1-11080380) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [04-06-2018 14:18:18] [MANAGER_LOGGER] - [2018-06-04,14:18:18](Thread:localhost-startStop-1-11080380) --> Connection refused: connect
+
+[ERROR] [04-06-2018 14:19:48] [MANAGER_LOGGER] - [2018-06-04,14:19:48](Thread:localhost-startStop-1-17971800) --> Connection refused: connect
+
+[ERROR] [04-06-2018 14:19:48] [MANAGER_LOGGER] - [2018-06-04,14:19:48](Thread:localhost-startStop-1-17971800) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [04-06-2018 14:19:49] [MANAGER_LOGGER] - [2018-06-04,14:19:49](Thread:localhost-startStop-1-17971800) --> Connection refused: connect
+

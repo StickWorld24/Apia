@@ -1,0 +1,2695 @@
+[INFO ] [08-04-2020 15:19:07] [APPLICATION_LOGGER] - [2020-04-08,15:19:07](Thread:SECURITY SERVER-31161859) --> Trying to start the security server
+
+[INFO ] [08-04-2020 15:19:07] [APPLICATION_LOGGER] - [2020-04-08,15:19:07](Thread:SECURITY SERVER-31161859) --> Verifying if we must recover with current: 1586369947327 and limit: 90000
+
+[DEBUG] [08-04-2020 15:19:07] [APPLICATION_LOGGER] - [2020-04-08,15:19:07](Thread:SECURITY SERVER-31161859) --> RECOVER CURRENT TIME: 1586369947327
+
+[DEBUG] [08-04-2020 15:19:07] [APPLICATION_LOGGER] - [2020-04-08,15:19:07](Thread:SECURITY SERVER-31161859) --> RECOVER LAST TIME: 1559012400000
+
+[DEBUG] [08-04-2020 15:19:07] [APPLICATION_LOGGER] - [2020-04-08,15:19:07](Thread:SECURITY SERVER-31161859) --> RECOVER DELTA: 27357547327
+
+[INFO ] [08-04-2020 15:19:07] [APPLICATION_LOGGER] - [2020-04-08,15:19:07](Thread:SECURITY SERVER-31161859) --> We must NOT recover from database
+
+[INFO ] [08-04-2020 15:19:08] [APPLICATION_LOGGER] - [2020-04-08,15:19:08](Thread:SECURITY SERVER-31161859) --> Loading licence for APIA
+
+[DEBUG] [08-04-2020 15:19:08] [APPLICATION_LOGGER] - [2020-04-08,15:19:08](Thread:SECURITY SERVER-31161859) --> Decoding licence information
+
+[DEBUG] [08-04-2020 15:19:08] [APPLICATION_LOGGER] - [2020-04-08,15:19:08](Thread:SECURITY SERVER-31161859) --> Decrypting licence information
+
+[INFO ] [08-04-2020 15:19:12] [APPLICATION_LOGGER] - [2020-04-08,15:19:12](Thread:SECURITY SERVER-31161859) --> LICENCE DATA: <?xml version='1.0' encoding='utf-8'?>
+
+<licence>
+
+	<company value="ApiaOnABox"/>
+	<expiration value="4133901600000"/>
+	<protection-units>
+		<unit id='022929199105796405' limit='50'>
+			<group name='base' />
+		</unit>
+		<unit id='09525612980060933' limit='3'>
+			<group name='administration' />
+			<group name='' />
+		</unit>
+		<unit id='09103721153927234' limit='50'>
+			<group name='nominated' /></unit>
+		<unit id='04025763644496432' limit='10'>
+			<group name='execution' />
+			<group name='configuration' />
+			<group name='scheduler' />
+			<group name='query' />
+			<group name='security' /></unit>
+		<unit id='07942786885680903' limit='7'>
+			<group name='analitic' />
+			<group name=''/>
+		</unit>
+	</protection-units>
+
+	<group name='base'>
+		<action name='InformationAction'>
+			<subaction name='information' />
+		</action>
+		<action name='FramesAction'>
+		</action>
+		<action name='DocumentAction'>
+			<subaction name='new' />
+			<subaction name='lock' />
+			<subaction name='delete'/>
+			<subaction name='update' />
+			<subaction name='confirm' />
+			<subaction name='history' /><subaction name='consult' />
+			<subaction name='view' />
+			<subaction name='download' />
+			<subaction name='downloadConf' />
+			<subaction name='information' />
+		</action>
+	</group>
+	<group name='query'>
+		<action name='query.QueryAction'>
+			<subaction name='init' />
+			<subaction name='new'/>
+			<subaction name='update' />
+			<subaction name='views' />
+			<subaction name='source' />
+			<subaction name='checkView' />
+			<subaction name='updateData' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='previous' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='viewDep' />
+			<subaction name='regenerate' />
+			<subaction name='order' />
+			<subactionname='viewQuery' />
+			<subaction name='viewModal' />
+			<subaction name='viewEntity' />
+			<subaction name='viewList' />
+			<subaction name='viewOff' />
+			<subaction name='backToOff' />
+			<subaction name='openResult' />
+			<subaction name='openResultPage' />
+			<subaction name='downloadResult' />
+			<subaction name='processList' />
+			<subaction name='filterModalList' />
+			<subaction name='filterSetList' />
+			<subaction name='releaseList' />
+			<subaction name='refreshList' />
+			<subaction name='acquireList' />
+			<subaction name='searchEntity' />
+			<subaction name='processQuery' /><subaction name='backToQuery' />
+			<subaction name='generatePdf' />
+			<subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='executeAction' />
+			<subaction name='returnAction' />
+			<subaction name='eventOnChange' />
+		</action>
+		<action name='query.MonitorDocumentsAction'>
+			<subaction name='init' />
+			<subaction name='search' />
+			<subaction name='filter' />
+			<subaction name='order' />
+			<subaction name='content' />
+			<subaction name='searchCont'/>
+			<subaction name='backToList' />
+		</action>
+		<action name='query.MonitorProcessesAction'><subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='detail' />
+			<subaction name='tasks' />
+			<subaction name='showTasks' />
+			<subaction name='backToList' />
+			<subaction name='detailTask' />
+			<subaction name='backToTask' />
+			<subaction name='detailSub' />
+			<subaction name='tasksSub' />
+			<subactionname='backTasks' />
+			<subaction name='generatePdf' />
+			<subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='generateTaskPdf' />
+			<subaction name='generateTaskCsv' />
+			<subaction name='generateTaskExcel' />
+			<subaction name='tasksTask' />
+			<subactionname='backTask' />
+		</action>
+		<action name='query.MonitorTasksAction'>
+			<subaction name='init'/>
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='history' />
+			<subaction name='backToList' />
+			<subaction name='generatePdf' /><subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='generateTaskPdf' />
+			<subaction name='generateTaskCsv' />
+			<subaction name='generateTaskExcel' />
+			<subaction name='details' />
+			<subaction name='detailsHis' />
+			<subaction name='backToHistory' /></action>
+	</group>
+	<group name='configuration'>
+		<action name='configuration.EnvParametersAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+		<action name='configuration.ParametersAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+	</group>
+	<group name='administration'>
+		<action name='administration.EntitiesStatusAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.ClasificationsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subactionname='clone' />
+			<subaction name='confClone' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.FormAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subactionname='clone' />
+			<subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='xmlFormDefinition' />
+			<subaction name='xmlAttributes' />
+			<subaction name='xmlFormEvents' /><subaction name='xmlFieldEvents' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlProperties' />
+			<subaction name='xmlModalQuery' />
+			<subaction name='getLabels' />
+			<subaction name='xmlBind' />
+			<subaction name='xmlModalData//para traer datos de modals' />
+			<subaction name='xmlEntAtt' />
+			<subaction name='xmlEntities' />
+		</action>
+		<action name='administration.BusinessClassesAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='nextUpdate' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm'/>
+			<subaction name='backToList' />
+			<subaction name='backFirst' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' /><subaction name='views' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.TasksAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList'/>
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' /><subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='addPools' />
+			<subaction name='alterMessage' />
+		</action>
+		<action name='administration.RolAction'>
+			<subactionname='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.DocumentationAction'>
+			<subaction name='init' />
+			<subaction name='generate' />
+		</action>
+		<action name='administration.ProcessAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm'/>
+			<subaction name='validate' />
+			<subaction name='save' />
+			<subaction name='backToPro' /><subaction name='backToVer' />
+			<subaction name='backToList' />
+			<subaction name='backToListWOk' />
+			<subaction name='viewDeps' />
+			<subaction name='viewVersion' />
+			<subaction name='viewProcess' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='initPro' />
+			<subaction name='order' />
+			<subaction name='addPools' /><subaction name='alterMessage' />
+			<subaction name='versions' />
+			<subaction name='recover'/>
+			<subaction name='xmlAttributes' />
+			<subaction name='xmlProDefinition' />
+			<subaction name='xmlTasks' />
+			<subaction name='xmlProcesses' />
+			<subaction name='xmlPools' />
+			<subaction name='xmlEntForms' />
+			<subaction name='xmlProForms' />
+			<subaction name='xmlEvents' />
+			<subaction name='xmlStates' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlBindings' />
+			<subaction name='xmlRoles' />
+			<subaction name='xmlValCondition' />
+			<subaction name='getLabels'/>
+		</action>
+		<action name='administration.EntitiesAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='openRelModal' />
+			<subaction name='initEnt' />
+			<subaction name='order' />
+			<subaction name='getLabels' />
+			<subaction name='xmlEvents' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlBindings' />
+			<subaction name='xmlAttributes //FIXME verificar si va' />
+			<subaction name='xmlEventsDefinition' />
+		</action>
+		<action name='administration.DataDictionaryAction'>
+			<subactionname='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' /><subaction name='order' />
+			<subaction name='download' />
+			<subaction name='upload' />
+			<subaction name='doUpload' />
+			<subaction name='changeDb' />
+		</action>
+		<action name='administration.ConnectionsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone'/>
+			<subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='test' />
+		</action>
+	</group>
+	<group name='security'>
+		<action name='security.FunctionalityAction'>
+			<subaction name='init' />
+			<subaction name='initAmb' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='dwModal' />
+			<subaction name='dwAdd' />
+		</action>
+		<action name='security.GroupsAction'>
+			<subaction name='init' />
+			<subaction name='initAmbGro' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='security.LabelsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='download' />
+			<subaction name='viewDeps' />
+			<subaction name='order' />
+		</action>
+		<action name='security.LanguageAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='changeLang' />
+			<subaction name='confirmLang' />
+		</action>
+		<action name='security.TreeViewAction'></action>
+		<action name='security.EnvironmentsAction'>
+			<subaction name='init' />
+			<subactionname='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='initData'/>
+			<subaction name='reloadLangs' />
+			<subaction name='order' />
+		</action>
+		<action name='security.GroupHierarchyAction'>
+			<subaction name='init' />
+			<subaction name='initAmb' />
+			<subaction name='addPools' />
+			<subaction name='removePools' />
+			<subaction name='confirm' />
+		</action>
+		<action name='security.ProfilesAction'>
+			<subaction name='init' />
+			<subaction name='initAmbPer' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' /><subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' /><subaction name='search' />
+			<subaction name='openModal' />
+			<subaction name='order' />
+			<subaction name='addFnc' />
+		</action>
+		<action name='security.ChangePwdAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+		<action name='security.ResetPwdAction'>
+			<subaction name='init' />
+			<subaction name='reset' />
+			<subaction name='showModal' />
+		</action><action name='security.LoginAction'>
+		</action>
+		<action name='security.MessagesAction'>
+			<subaction name='init' />
+			<subaction name='initAmbMes' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='security.MigrationAction'>
+			<subaction name='init' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='expstep1' />
+			<subaction name='expstep2' />
+			<subactionname='expconfirm' />
+			<subaction name='impstep1' />
+			<subaction name='impstep2' />
+			<subactionname='impconfirm' />
+			<subaction name='impshowobject' />
+			<subaction name='impconflicts' /><subaction name='impconflictobjects' />
+			<subaction name='updateobject' />
+			<subaction name='removeobject' />
+			<subaction name='modifyobject' />
+			<subaction name='modifyobjectconfirm' />
+			<subaction name='mapobject' />
+			<subaction name='impbackstep2' />
+			<subaction name='impbackconflicts' />
+			<subaction name='impbackshowobject' />
+			<subaction name='impbackconflictobjects' />
+			<subaction name='impupdates' />
+			<subaction name='impupdateobjects' />
+			<subaction name='impbackupdates' />
+			<subaction name='removeupdateobject' />
+			<subaction name='impconflictmap' />
+			<subaction name='impconflictupdate' />
+			<subaction name='impconflictremove' />
+		</action>
+		<action name='security.UserAction'>
+			<subaction name='init' />
+			<subaction name='initAmbUsu' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='reactivate' />
+			<subaction name='reactivateClone' />
+			<subaction name='step2' />
+			<subaction name='backToStep1' />
+			<subaction name='order' />
+		</action>
+	</group>
+	<group name='analitic'>
+		<action name='analitic.DatawareAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+			<subaction name='loadView' />
+			<subaction name='loadCube' />
+			<subaction name='loadCard' />
+			<subaction name='test' />
+			<subaction name='testBuild' />
+		</action>
+	</group>
+	<group name='scheduler'>
+		<action name='scheduler.SchedulerAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' /><subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='reload' /><subaction name='order' />
+		</action>
+	</group>
+	<group name='execution'>
+		<action name='execution.ProPriorityAction'>
+			<subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='viewProcess' />
+			<subaction name='backToList' />
+			<subaction name='confirm' />
+		</action>
+		<action name='execution.TasksReleaseAction'>
+			<subaction name='init' />
+			<subaction name='initHierarchy' />
+			<subaction name='setFilter' />
+			<subaction name='release' />
+			<subaction name='confirm' />
+			<subaction name='order' /><subaction name='backToList' />
+		</action>
+		<action name='execution.ProStartAction'>
+			<subaction name='search' />
+			<subaction name='initCancel' />
+			<subaction name='startCancel' />
+			<subaction name='startAlter' />
+		</action>
+		<action name='execution.FormAction'>
+			<subaction name='fireFieldEvent' />
+			<subaction name='fireFormEvent' />
+			<subaction name='fireModal' />
+			<subaction name='uploadFile' />
+			<subaction name='updateFile' />
+			<subaction name='removeFile' />
+			<subaction name='confirmDoc' />
+			<subaction name='download' />
+		</action>
+		<action name='execution.EntInstanceAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='getProcess' />
+			<subaction name='startCreation' />
+			<subaction name='order' />
+		</action>
+		<action name='execution.ProRollbackAction'>
+			<subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='detail' />
+			<subaction name='tasks' />
+			<subaction name='orderTasks' />
+			<subaction name='backToList' />
+			<subaction name='rollback' />
+		</action>
+		<action name='execution.TasksListAction'>
+			<subaction name='init' /><subaction name='order' />
+			<subaction name='filterAuto' />
+			<subaction name='removeFilter'/>
+			<subaction name='filterModal' />
+			<subaction name='columnModal' />
+			<subaction name='setFilter' />
+			<subaction name='setColumn' />
+			<subaction name='work' />
+			<subaction name='release'/>
+			<subaction name='acquire' />
+			<subaction name='refresh' />
+		</action>
+		<action name='execution.TaskAction'>
+			<subaction name='getTask' />
+			<subaction name='saveTask' />
+			<subaction name='nextStep' />
+			<subaction name='lastStep' />
+			<subaction name='confirm' />
+			<subaction name='confirmPath' />
+			<subaction name='confirmPool' />
+			<subaction name='startProcess' />
+			<subaction name='exit' />
+			<subaction name='release' />
+			<subaction name='delegate' />
+			<subaction name='elevate' />
+		</action>
+		<action name='execution.NotificationAction'>
+			<subaction name='init' />
+			<subaction name='initGeneral' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='view' />
+		</action>
+		<action name='execution.TaskReasignAction'>
+			<subaction name='init' />
+			<subaction name='initHierarchy' />
+			<subaction name='setFilter' />
+			<subaction name='reasign' />
+			<subaction name='confirm' />
+			<subaction name='order' />
+			<subaction name='backToList' />
+		</action>
+	</group>
+</licence>
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Making licence replacementes
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Starting licence document parsing
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Initializing auxiliary structures
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Iterating over document nodes
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Getting company information
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Getting expiration information
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Getting expiration units
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Finished iterating over document nodes
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Finished loading structures
+
+[INFO ] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Security server initialized
+
+[INFO ] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Starting security server@DESKTOP-PN7D238:10000
+
+[INFO ] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Security server started
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Starting session timeout thread
+
+[DEBUG] [08-04-2020 15:19:13] [APPLICATION_LOGGER] - [2020-04-08,15:19:13](Thread:SECURITY SERVER-31161859) --> Starting session checkpoint thread
+
+[DEBUG] [08-04-2020 15:20:46] [APPLICATION_LOGGER] - [2020-04-08,15:20:46](Thread:Security Server Thread-3445715) --> Accepted new connection at: 49875 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:20:46] [APPLICATION_LOGGER] - [2020-04-08,15:20:46](Thread:Security Server Thread-3445715) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='login'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' sessionid='458FAD37E29DB11A5AA3290A4BEFEC75' /></operation></request>
+
+[DEBUG] [08-04-2020 15:20:46] [APPLICATION_LOGGER] - [2020-04-08,15:20:46](Thread:Security Server Thread-3445715) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:20:46] [APPLICATION_LOGGER] - [2020-04-08,15:20:46](Thread:Security Server Thread-3445715) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:21:36] [APPLICATION_LOGGER] - [2020-04-08,15:21:36](Thread:Security Server Thread-11063780) --> Accepted new connection at: 49921 for socket: Security Server Thread
+
+[INFO ] [08-04-2020 15:21:36] [APPLICATION_LOGGER] - [2020-04-08,15:21:36](Thread:Security Server Thread-11063780) --> Received query command
+
+[DEBUG] [08-04-2020 15:21:36] [APPLICATION_LOGGER] - [2020-04-08,15:21:36](Thread:Security Server Thread-11063780) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:21:36] [APPLICATION_LOGGER] - [2020-04-08,15:21:36](Thread:Security Server Thread-11063780) --> Socket: Security Server Thread closed.
+
+[INFO ] [08-04-2020 15:42:30] [APPLICATION_LOGGER] - [2020-04-08,15:42:30](Thread:SECURITY SERVER-21532940) --> Trying to start the security server
+
+[INFO ] [08-04-2020 15:42:30] [APPLICATION_LOGGER] - [2020-04-08,15:42:30](Thread:SECURITY SERVER-21532940) --> Verifying if we must recover with current: 1586371350348 and limit: 90000
+
+[DEBUG] [08-04-2020 15:42:31] [APPLICATION_LOGGER] - [2020-04-08,15:42:31](Thread:SECURITY SERVER-21532940) --> RECOVER CURRENT TIME: 1586371350348
+
+[DEBUG] [08-04-2020 15:42:31] [APPLICATION_LOGGER] - [2020-04-08,15:42:31](Thread:SECURITY SERVER-21532940) --> RECOVER LAST TIME: 1586314800000
+
+[DEBUG] [08-04-2020 15:42:31] [APPLICATION_LOGGER] - [2020-04-08,15:42:31](Thread:SECURITY SERVER-21532940) --> RECOVER DELTA: 56550348
+
+[INFO ] [08-04-2020 15:42:31] [APPLICATION_LOGGER] - [2020-04-08,15:42:31](Thread:SECURITY SERVER-21532940) --> We must NOT recover from database
+
+[INFO ] [08-04-2020 15:42:31] [APPLICATION_LOGGER] - [2020-04-08,15:42:31](Thread:SECURITY SERVER-21532940) --> Loading licence for APIA
+
+[DEBUG] [08-04-2020 15:42:31] [APPLICATION_LOGGER] - [2020-04-08,15:42:31](Thread:SECURITY SERVER-21532940) --> Decoding licence information
+
+[DEBUG] [08-04-2020 15:42:31] [APPLICATION_LOGGER] - [2020-04-08,15:42:31](Thread:SECURITY SERVER-21532940) --> Decrypting licence information
+
+[INFO ] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> LICENCE DATA: <?xml version='1.0' encoding='utf-8'?>
+
+<licence>
+
+	<company value="ApiaOnABox"/>
+	<expiration value="4133901600000"/>
+	<protection-units>
+		<unit id='022929199105796405' limit='50'>
+			<group name='base' />
+		</unit>
+		<unit id='09525612980060933' limit='3'>
+			<group name='administration' />
+			<group name='' />
+		</unit>
+		<unit id='09103721153927234' limit='50'>
+			<group name='nominated' /></unit>
+		<unit id='04025763644496432' limit='10'>
+			<group name='execution' />
+			<group name='configuration' />
+			<group name='scheduler' />
+			<group name='query' />
+			<group name='security' /></unit>
+		<unit id='07942786885680903' limit='7'>
+			<group name='analitic' />
+			<group name=''/>
+		</unit>
+	</protection-units>
+
+	<group name='base'>
+		<action name='InformationAction'>
+			<subaction name='information' />
+		</action>
+		<action name='FramesAction'>
+		</action>
+		<action name='DocumentAction'>
+			<subaction name='new' />
+			<subaction name='lock' />
+			<subaction name='delete'/>
+			<subaction name='update' />
+			<subaction name='confirm' />
+			<subaction name='history' /><subaction name='consult' />
+			<subaction name='view' />
+			<subaction name='download' />
+			<subaction name='downloadConf' />
+			<subaction name='information' />
+		</action>
+	</group>
+	<group name='query'>
+		<action name='query.QueryAction'>
+			<subaction name='init' />
+			<subaction name='new'/>
+			<subaction name='update' />
+			<subaction name='views' />
+			<subaction name='source' />
+			<subaction name='checkView' />
+			<subaction name='updateData' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='previous' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='viewDep' />
+			<subaction name='regenerate' />
+			<subaction name='order' />
+			<subactionname='viewQuery' />
+			<subaction name='viewModal' />
+			<subaction name='viewEntity' />
+			<subaction name='viewList' />
+			<subaction name='viewOff' />
+			<subaction name='backToOff' />
+			<subaction name='openResult' />
+			<subaction name='openResultPage' />
+			<subaction name='downloadResult' />
+			<subaction name='processList' />
+			<subaction name='filterModalList' />
+			<subaction name='filterSetList' />
+			<subaction name='releaseList' />
+			<subaction name='refreshList' />
+			<subaction name='acquireList' />
+			<subaction name='searchEntity' />
+			<subaction name='processQuery' /><subaction name='backToQuery' />
+			<subaction name='generatePdf' />
+			<subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='executeAction' />
+			<subaction name='returnAction' />
+			<subaction name='eventOnChange' />
+		</action>
+		<action name='query.MonitorDocumentsAction'>
+			<subaction name='init' />
+			<subaction name='search' />
+			<subaction name='filter' />
+			<subaction name='order' />
+			<subaction name='content' />
+			<subaction name='searchCont'/>
+			<subaction name='backToList' />
+		</action>
+		<action name='query.MonitorProcessesAction'><subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='detail' />
+			<subaction name='tasks' />
+			<subaction name='showTasks' />
+			<subaction name='backToList' />
+			<subaction name='detailTask' />
+			<subaction name='backToTask' />
+			<subaction name='detailSub' />
+			<subaction name='tasksSub' />
+			<subactionname='backTasks' />
+			<subaction name='generatePdf' />
+			<subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='generateTaskPdf' />
+			<subaction name='generateTaskCsv' />
+			<subaction name='generateTaskExcel' />
+			<subaction name='tasksTask' />
+			<subactionname='backTask' />
+		</action>
+		<action name='query.MonitorTasksAction'>
+			<subaction name='init'/>
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='history' />
+			<subaction name='backToList' />
+			<subaction name='generatePdf' /><subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='generateTaskPdf' />
+			<subaction name='generateTaskCsv' />
+			<subaction name='generateTaskExcel' />
+			<subaction name='details' />
+			<subaction name='detailsHis' />
+			<subaction name='backToHistory' /></action>
+	</group>
+	<group name='configuration'>
+		<action name='configuration.EnvParametersAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+		<action name='configuration.ParametersAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+	</group>
+	<group name='administration'>
+		<action name='administration.EntitiesStatusAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.ClasificationsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subactionname='clone' />
+			<subaction name='confClone' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.FormAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subactionname='clone' />
+			<subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='xmlFormDefinition' />
+			<subaction name='xmlAttributes' />
+			<subaction name='xmlFormEvents' /><subaction name='xmlFieldEvents' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlProperties' />
+			<subaction name='xmlModalQuery' />
+			<subaction name='getLabels' />
+			<subaction name='xmlBind' />
+			<subaction name='xmlModalData//para traer datos de modals' />
+			<subaction name='xmlEntAtt' />
+			<subaction name='xmlEntities' />
+		</action>
+		<action name='administration.BusinessClassesAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='nextUpdate' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm'/>
+			<subaction name='backToList' />
+			<subaction name='backFirst' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' /><subaction name='views' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.TasksAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList'/>
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' /><subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='addPools' />
+			<subaction name='alterMessage' />
+		</action>
+		<action name='administration.RolAction'>
+			<subactionname='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.DocumentationAction'>
+			<subaction name='init' />
+			<subaction name='generate' />
+		</action>
+		<action name='administration.ProcessAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm'/>
+			<subaction name='validate' />
+			<subaction name='save' />
+			<subaction name='backToPro' /><subaction name='backToVer' />
+			<subaction name='backToList' />
+			<subaction name='backToListWOk' />
+			<subaction name='viewDeps' />
+			<subaction name='viewVersion' />
+			<subaction name='viewProcess' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='initPro' />
+			<subaction name='order' />
+			<subaction name='addPools' /><subaction name='alterMessage' />
+			<subaction name='versions' />
+			<subaction name='recover'/>
+			<subaction name='xmlAttributes' />
+			<subaction name='xmlProDefinition' />
+			<subaction name='xmlTasks' />
+			<subaction name='xmlProcesses' />
+			<subaction name='xmlPools' />
+			<subaction name='xmlEntForms' />
+			<subaction name='xmlProForms' />
+			<subaction name='xmlEvents' />
+			<subaction name='xmlStates' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlBindings' />
+			<subaction name='xmlRoles' />
+			<subaction name='xmlValCondition' />
+			<subaction name='getLabels'/>
+		</action>
+		<action name='administration.EntitiesAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='openRelModal' />
+			<subaction name='initEnt' />
+			<subaction name='order' />
+			<subaction name='getLabels' />
+			<subaction name='xmlEvents' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlBindings' />
+			<subaction name='xmlAttributes //FIXME verificar si va' />
+			<subaction name='xmlEventsDefinition' />
+		</action>
+		<action name='administration.DataDictionaryAction'>
+			<subactionname='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' /><subaction name='order' />
+			<subaction name='download' />
+			<subaction name='upload' />
+			<subaction name='doUpload' />
+			<subaction name='changeDb' />
+		</action>
+		<action name='administration.ConnectionsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone'/>
+			<subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='test' />
+		</action>
+	</group>
+	<group name='security'>
+		<action name='security.FunctionalityAction'>
+			<subaction name='init' />
+			<subaction name='initAmb' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='dwModal' />
+			<subaction name='dwAdd' />
+		</action>
+		<action name='security.GroupsAction'>
+			<subaction name='init' />
+			<subaction name='initAmbGro' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='security.LabelsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='download' />
+			<subaction name='viewDeps' />
+			<subaction name='order' />
+		</action>
+		<action name='security.LanguageAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='changeLang' />
+			<subaction name='confirmLang' />
+		</action>
+		<action name='security.TreeViewAction'></action>
+		<action name='security.EnvironmentsAction'>
+			<subaction name='init' />
+			<subactionname='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='initData'/>
+			<subaction name='reloadLangs' />
+			<subaction name='order' />
+		</action>
+		<action name='security.GroupHierarchyAction'>
+			<subaction name='init' />
+			<subaction name='initAmb' />
+			<subaction name='addPools' />
+			<subaction name='removePools' />
+			<subaction name='confirm' />
+		</action>
+		<action name='security.ProfilesAction'>
+			<subaction name='init' />
+			<subaction name='initAmbPer' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' /><subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' /><subaction name='search' />
+			<subaction name='openModal' />
+			<subaction name='order' />
+			<subaction name='addFnc' />
+		</action>
+		<action name='security.ChangePwdAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+		<action name='security.ResetPwdAction'>
+			<subaction name='init' />
+			<subaction name='reset' />
+			<subaction name='showModal' />
+		</action><action name='security.LoginAction'>
+		</action>
+		<action name='security.MessagesAction'>
+			<subaction name='init' />
+			<subaction name='initAmbMes' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='security.MigrationAction'>
+			<subaction name='init' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='expstep1' />
+			<subaction name='expstep2' />
+			<subactionname='expconfirm' />
+			<subaction name='impstep1' />
+			<subaction name='impstep2' />
+			<subactionname='impconfirm' />
+			<subaction name='impshowobject' />
+			<subaction name='impconflicts' /><subaction name='impconflictobjects' />
+			<subaction name='updateobject' />
+			<subaction name='removeobject' />
+			<subaction name='modifyobject' />
+			<subaction name='modifyobjectconfirm' />
+			<subaction name='mapobject' />
+			<subaction name='impbackstep2' />
+			<subaction name='impbackconflicts' />
+			<subaction name='impbackshowobject' />
+			<subaction name='impbackconflictobjects' />
+			<subaction name='impupdates' />
+			<subaction name='impupdateobjects' />
+			<subaction name='impbackupdates' />
+			<subaction name='removeupdateobject' />
+			<subaction name='impconflictmap' />
+			<subaction name='impconflictupdate' />
+			<subaction name='impconflictremove' />
+		</action>
+		<action name='security.UserAction'>
+			<subaction name='init' />
+			<subaction name='initAmbUsu' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='reactivate' />
+			<subaction name='reactivateClone' />
+			<subaction name='step2' />
+			<subaction name='backToStep1' />
+			<subaction name='order' />
+		</action>
+	</group>
+	<group name='analitic'>
+		<action name='analitic.DatawareAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+			<subaction name='loadView' />
+			<subaction name='loadCube' />
+			<subaction name='loadCard' />
+			<subaction name='test' />
+			<subaction name='testBuild' />
+		</action>
+	</group>
+	<group name='scheduler'>
+		<action name='scheduler.SchedulerAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' /><subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='reload' /><subaction name='order' />
+		</action>
+	</group>
+	<group name='execution'>
+		<action name='execution.ProPriorityAction'>
+			<subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='viewProcess' />
+			<subaction name='backToList' />
+			<subaction name='confirm' />
+		</action>
+		<action name='execution.TasksReleaseAction'>
+			<subaction name='init' />
+			<subaction name='initHierarchy' />
+			<subaction name='setFilter' />
+			<subaction name='release' />
+			<subaction name='confirm' />
+			<subaction name='order' /><subaction name='backToList' />
+		</action>
+		<action name='execution.ProStartAction'>
+			<subaction name='search' />
+			<subaction name='initCancel' />
+			<subaction name='startCancel' />
+			<subaction name='startAlter' />
+		</action>
+		<action name='execution.FormAction'>
+			<subaction name='fireFieldEvent' />
+			<subaction name='fireFormEvent' />
+			<subaction name='fireModal' />
+			<subaction name='uploadFile' />
+			<subaction name='updateFile' />
+			<subaction name='removeFile' />
+			<subaction name='confirmDoc' />
+			<subaction name='download' />
+		</action>
+		<action name='execution.EntInstanceAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='getProcess' />
+			<subaction name='startCreation' />
+			<subaction name='order' />
+		</action>
+		<action name='execution.ProRollbackAction'>
+			<subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='detail' />
+			<subaction name='tasks' />
+			<subaction name='orderTasks' />
+			<subaction name='backToList' />
+			<subaction name='rollback' />
+		</action>
+		<action name='execution.TasksListAction'>
+			<subaction name='init' /><subaction name='order' />
+			<subaction name='filterAuto' />
+			<subaction name='removeFilter'/>
+			<subaction name='filterModal' />
+			<subaction name='columnModal' />
+			<subaction name='setFilter' />
+			<subaction name='setColumn' />
+			<subaction name='work' />
+			<subaction name='release'/>
+			<subaction name='acquire' />
+			<subaction name='refresh' />
+		</action>
+		<action name='execution.TaskAction'>
+			<subaction name='getTask' />
+			<subaction name='saveTask' />
+			<subaction name='nextStep' />
+			<subaction name='lastStep' />
+			<subaction name='confirm' />
+			<subaction name='confirmPath' />
+			<subaction name='confirmPool' />
+			<subaction name='startProcess' />
+			<subaction name='exit' />
+			<subaction name='release' />
+			<subaction name='delegate' />
+			<subaction name='elevate' />
+		</action>
+		<action name='execution.NotificationAction'>
+			<subaction name='init' />
+			<subaction name='initGeneral' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='view' />
+		</action>
+		<action name='execution.TaskReasignAction'>
+			<subaction name='init' />
+			<subaction name='initHierarchy' />
+			<subaction name='setFilter' />
+			<subaction name='reasign' />
+			<subaction name='confirm' />
+			<subaction name='order' />
+			<subaction name='backToList' />
+		</action>
+	</group>
+</licence>
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Making licence replacementes
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Starting licence document parsing
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Initializing auxiliary structures
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Iterating over document nodes
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Getting company information
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Getting expiration information
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Getting expiration units
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Finished iterating over document nodes
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Finished loading structures
+
+[INFO ] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Security server initialized
+
+[INFO ] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Starting security server@DESKTOP-PN7D238:10000
+
+[INFO ] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Security server started
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Starting session timeout thread
+
+[DEBUG] [08-04-2020 15:42:35] [APPLICATION_LOGGER] - [2020-04-08,15:42:35](Thread:SECURITY SERVER-21532940) --> Starting session checkpoint thread
+
+[DEBUG] [08-04-2020 15:44:14] [APPLICATION_LOGGER] - [2020-04-08,15:44:14](Thread:Security Server Thread-3550555) --> Accepted new connection at: 49972 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:14] [APPLICATION_LOGGER] - [2020-04-08,15:44:14](Thread:Security Server Thread-3550555) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='login'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:14] [APPLICATION_LOGGER] - [2020-04-08,15:44:14](Thread:Security Server Thread-3550555) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:14] [APPLICATION_LOGGER] - [2020-04-08,15:44:14](Thread:Security Server Thread-3550555) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-28671759) --> Accepted new connection at: 49997 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-28671759) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-28671759) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-28671759) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-24574545) --> Accepted new connection at: 49999 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-24574545) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-24574545) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:28] [APPLICATION_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-24574545) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:34] [APPLICATION_LOGGER] - [2020-04-08,15:44:34](Thread:Security Server Thread-26365867) --> Accepted new connection at: 50007 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:35] [APPLICATION_LOGGER] - [2020-04-08,15:44:35](Thread:Security Server Thread-26365867) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - null' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:35] [APPLICATION_LOGGER] - [2020-04-08,15:44:35](Thread:Security Server Thread-26365867) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:35] [APPLICATION_LOGGER] - [2020-04-08,15:44:35](Thread:Security Server Thread-26365867) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-16276424) --> Accepted new connection at: 50009 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-16276424) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-16276424) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-16276424) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-30605873) --> Accepted new connection at: 50010 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-30605873) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-30605873) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:36] [APPLICATION_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-30605873) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:37] [APPLICATION_LOGGER] - [2020-04-08,15:44:37](Thread:Security Server Thread-7614124) --> Accepted new connection at: 50011 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:37] [APPLICATION_LOGGER] - [2020-04-08,15:44:37](Thread:Security Server Thread-7614124) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - page' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:37] [APPLICATION_LOGGER] - [2020-04-08,15:44:37](Thread:Security Server Thread-7614124) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:37] [APPLICATION_LOGGER] - [2020-04-08,15:44:37](Thread:Security Server Thread-7614124) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:43] [APPLICATION_LOGGER] - [2020-04-08,15:44:43](Thread:Security Server Thread-21638566) --> Accepted new connection at: 50015 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:43] [APPLICATION_LOGGER] - [2020-04-08,15:44:43](Thread:Security Server Thread-21638566) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - update' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:43] [APPLICATION_LOGGER] - [2020-04-08,15:44:43](Thread:Security Server Thread-21638566) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:43] [APPLICATION_LOGGER] - [2020-04-08,15:44:43](Thread:Security Server Thread-21638566) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-13209678) --> Accepted new connection at: 50018 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-13209678) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-13209678) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-13209678) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29120777) --> Accepted new connection at: 50019 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29120777) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29120777) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29120777) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-16956086) --> Accepted new connection at: 50021 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-16956086) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - getUserPools' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-16956086) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-16956086) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-21169223) --> Accepted new connection at: 50020 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-21169223) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - getUserStyles' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-21169223) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-21169223) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29215660) --> Accepted new connection at: 50022 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29215660) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - getUserOrgRoles' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29215660) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29215660) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-2116460) --> Accepted new connection at: 50023 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-2116460) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - getUserEnvironments' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-2116460) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:47] [APPLICATION_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-2116460) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:48] [APPLICATION_LOGGER] - [2020-04-08,15:44:48](Thread:Security Server Thread-4151129) --> Accepted new connection at: 50024 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:48] [APPLICATION_LOGGER] - [2020-04-08,15:44:48](Thread:Security Server Thread-4151129) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - getUserProfiles' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:48] [APPLICATION_LOGGER] - [2020-04-08,15:44:48](Thread:Security Server Thread-4151129) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:48] [APPLICATION_LOGGER] - [2020-04-08,15:44:48](Thread:Security Server Thread-4151129) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:44:51] [APPLICATION_LOGGER] - [2020-04-08,15:44:51](Thread:Security Server Thread-27939717) --> Accepted new connection at: 50027 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:51] [APPLICATION_LOGGER] - [2020-04-08,15:44:51](Thread:Security Server Thread-27939717) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Global Parameters Administration - null' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:44:51] [APPLICATION_LOGGER] - [2020-04-08,15:44:51](Thread:Security Server Thread-27939717) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:44:51] [APPLICATION_LOGGER] - [2020-04-08,15:44:51](Thread:Security Server Thread-27939717) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:08] [APPLICATION_LOGGER] - [2020-04-08,15:45:08](Thread:Security Server Thread-18323928) --> Accepted new connection at: 50036 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:08] [APPLICATION_LOGGER] - [2020-04-08,15:45:08](Thread:Security Server Thread-18323928) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - confirm' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:08] [APPLICATION_LOGGER] - [2020-04-08,15:45:08](Thread:Security Server Thread-18323928) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:08] [APPLICATION_LOGGER] - [2020-04-08,15:45:08](Thread:Security Server Thread-18323928) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12008209) --> Accepted new connection at: 50038 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12008209) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - list' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12008209) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12008209) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-21297176) --> Accepted new connection at: 50039 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-21297176) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-21297176) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-21297176) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12829260) --> Accepted new connection at: 50040 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12829260) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12829260) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12829260) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-941158) --> Accepted new connection at: 50041 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-941158) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Users Administration - page' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-941158) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:10] [APPLICATION_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-941158) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:20] [APPLICATION_LOGGER] - [2020-04-08,15:45:20](Thread:Security Server Thread-3700444) --> Accepted new connection at: 50047 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:20] [APPLICATION_LOGGER] - [2020-04-08,15:45:20](Thread:Security Server Thread-3700444) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Global Parameters Administration - null' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:20] [APPLICATION_LOGGER] - [2020-04-08,15:45:20](Thread:Security Server Thread-3700444) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:20] [APPLICATION_LOGGER] - [2020-04-08,15:45:20](Thread:Security Server Thread-3700444) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:39] [APPLICATION_LOGGER] - [2020-04-08,15:45:39](Thread:Security Server Thread-28684582) --> Accepted new connection at: 50071 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:39] [APPLICATION_LOGGER] - [2020-04-08,15:45:39](Thread:Security Server Thread-28684582) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - null' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:39] [APPLICATION_LOGGER] - [2020-04-08,15:45:39](Thread:Security Server Thread-28684582) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:39] [APPLICATION_LOGGER] - [2020-04-08,15:45:39](Thread:Security Server Thread-28684582) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-26494445) --> Accepted new connection at: 50073 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-26494445) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-26494445) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-26494445) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-21947420) --> Accepted new connection at: 50074 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-21947420) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-21947420) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-21947420) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-1273849) --> Accepted new connection at: 50075 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-1273849) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - page' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-1273849) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:41] [APPLICATION_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-1273849) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:52] [APPLICATION_LOGGER] - [2020-04-08,15:45:52](Thread:Security Server Thread-31980402) --> Accepted new connection at: 50081 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:52] [APPLICATION_LOGGER] - [2020-04-08,15:45:52](Thread:Security Server Thread-31980402) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Business Classes Design - null' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:52] [APPLICATION_LOGGER] - [2020-04-08,15:45:52](Thread:Security Server Thread-31980402) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:52] [APPLICATION_LOGGER] - [2020-04-08,15:45:52](Thread:Security Server Thread-31980402) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-23474319) --> Accepted new connection at: 50084 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-23474319) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-23474319) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-23474319) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-21726188) --> Accepted new connection at: 50085 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-21726188) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-21726188) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-21726188) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-737709) --> Accepted new connection at: 50086 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-737709) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Business Classes Design - page' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-737709) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:45:53] [APPLICATION_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-737709) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:01] [APPLICATION_LOGGER] - [2020-04-08,15:46:01](Thread:Security Server Thread-30886126) --> Accepted new connection at: 50091 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:01] [APPLICATION_LOGGER] - [2020-04-08,15:46:01](Thread:Security Server Thread-30886126) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Business Classes Design - update' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:01] [APPLICATION_LOGGER] - [2020-04-08,15:46:01](Thread:Security Server Thread-30886126) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:01] [APPLICATION_LOGGER] - [2020-04-08,15:46:01](Thread:Security Server Thread-30886126) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-25143812) --> Accepted new connection at: 50093 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-25143812) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-25143812) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-25143812) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-13006814) --> Accepted new connection at: 50094 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-13006814) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-13006814) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:04] [APPLICATION_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-13006814) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-31038511) --> Accepted new connection at: 50096 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-31038511) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Business Classes Design - loadPermissions' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-31038511) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-31038511) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-23851298) --> Accepted new connection at: 50097 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-23851298) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Business Classes Design - loadParams' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-23851298) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:05] [APPLICATION_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-23851298) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:24] [APPLICATION_LOGGER] - [2020-04-08,15:46:24](Thread:Security Server Thread-27082502) --> Accepted new connection at: 50109 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:24] [APPLICATION_LOGGER] - [2020-04-08,15:46:24](Thread:Security Server Thread-27082502) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Business Classes Design - list' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:24] [APPLICATION_LOGGER] - [2020-04-08,15:46:24](Thread:Security Server Thread-27082502) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:24] [APPLICATION_LOGGER] - [2020-04-08,15:46:24](Thread:Security Server Thread-27082502) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-29876358) --> Accepted new connection at: 50110 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-29876358) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-29876358) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-29876358) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32328888) --> Accepted new connection at: 50111 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32328888) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32328888) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32328888) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32360074) --> Accepted new connection at: 50113 for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32360074) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Business Classes Design - page' sessionid='012E1FDF9A0958B44552632A3AB1323B' /></operation></request>
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32360074) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:46:25] [APPLICATION_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32360074) --> Socket: Security Server Thread closed.
+
+[DEBUG] [08-04-2020 15:47:03] [APPLICATION_LOGGER] - [2020-04-08,15:47:03](Thread:Security Server Thread-26407344) --> Accepted new connection at: 50157 for socket: Security Server Thread
+
+[INFO ] [08-04-2020 15:47:03] [APPLICATION_LOGGER] - [2020-04-08,15:47:03](Thread:Security Server Thread-26407344) --> Received query command
+
+[DEBUG] [08-04-2020 15:47:03] [APPLICATION_LOGGER] - [2020-04-08,15:47:03](Thread:Security Server Thread-26407344) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [08-04-2020 15:47:03] [APPLICATION_LOGGER] - [2020-04-08,15:47:03](Thread:Security Server Thread-26407344) --> Socket: Security Server Thread closed.
+
+[INFO ] [02-07-2020 07:30:46] [APPLICATION_LOGGER] - [2020-07-02,07:30:46](Thread:SECURITY SERVER-7544498) --> Trying to start the security server
+
+[INFO ] [02-07-2020 07:30:46] [APPLICATION_LOGGER] - [2020-07-02,07:30:46](Thread:SECURITY SERVER-7544498) --> Verifying if we must recover with current: 1593685846228 and limit: 90000
+
+[DEBUG] [02-07-2020 07:30:46] [APPLICATION_LOGGER] - [2020-07-02,07:30:46](Thread:SECURITY SERVER-7544498) --> RECOVER CURRENT TIME: 1593685846228
+
+[DEBUG] [02-07-2020 07:30:46] [APPLICATION_LOGGER] - [2020-07-02,07:30:46](Thread:SECURITY SERVER-7544498) --> RECOVER LAST TIME: 1586314800000
+
+[DEBUG] [02-07-2020 07:30:46] [APPLICATION_LOGGER] - [2020-07-02,07:30:46](Thread:SECURITY SERVER-7544498) --> RECOVER DELTA: 7371046228
+
+[INFO ] [02-07-2020 07:30:46] [APPLICATION_LOGGER] - [2020-07-02,07:30:46](Thread:SECURITY SERVER-7544498) --> We must NOT recover from database
+
+[INFO ] [02-07-2020 07:30:47] [APPLICATION_LOGGER] - [2020-07-02,07:30:47](Thread:SECURITY SERVER-7544498) --> Loading licence for APIA
+
+[DEBUG] [02-07-2020 07:30:47] [APPLICATION_LOGGER] - [2020-07-02,07:30:47](Thread:SECURITY SERVER-7544498) --> Decoding licence information
+
+[DEBUG] [02-07-2020 07:30:47] [APPLICATION_LOGGER] - [2020-07-02,07:30:47](Thread:SECURITY SERVER-7544498) --> Decrypting licence information
+
+[INFO ] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> LICENCE DATA: <?xml version='1.0' encoding='utf-8'?>
+
+<licence>
+
+	<company value="ApiaOnABox"/>
+	<expiration value="4133901600000"/>
+	<protection-units>
+		<unit id='022929199105796405' limit='50'>
+			<group name='base' />
+		</unit>
+		<unit id='09525612980060933' limit='3'>
+			<group name='administration' />
+			<group name='' />
+		</unit>
+		<unit id='09103721153927234' limit='50'>
+			<group name='nominated' /></unit>
+		<unit id='04025763644496432' limit='10'>
+			<group name='execution' />
+			<group name='configuration' />
+			<group name='scheduler' />
+			<group name='query' />
+			<group name='security' /></unit>
+		<unit id='07942786885680903' limit='7'>
+			<group name='analitic' />
+			<group name=''/>
+		</unit>
+	</protection-units>
+
+	<group name='base'>
+		<action name='InformationAction'>
+			<subaction name='information' />
+		</action>
+		<action name='FramesAction'>
+		</action>
+		<action name='DocumentAction'>
+			<subaction name='new' />
+			<subaction name='lock' />
+			<subaction name='delete'/>
+			<subaction name='update' />
+			<subaction name='confirm' />
+			<subaction name='history' /><subaction name='consult' />
+			<subaction name='view' />
+			<subaction name='download' />
+			<subaction name='downloadConf' />
+			<subaction name='information' />
+		</action>
+	</group>
+	<group name='query'>
+		<action name='query.QueryAction'>
+			<subaction name='init' />
+			<subaction name='new'/>
+			<subaction name='update' />
+			<subaction name='views' />
+			<subaction name='source' />
+			<subaction name='checkView' />
+			<subaction name='updateData' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='previous' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='viewDep' />
+			<subaction name='regenerate' />
+			<subaction name='order' />
+			<subactionname='viewQuery' />
+			<subaction name='viewModal' />
+			<subaction name='viewEntity' />
+			<subaction name='viewList' />
+			<subaction name='viewOff' />
+			<subaction name='backToOff' />
+			<subaction name='openResult' />
+			<subaction name='openResultPage' />
+			<subaction name='downloadResult' />
+			<subaction name='processList' />
+			<subaction name='filterModalList' />
+			<subaction name='filterSetList' />
+			<subaction name='releaseList' />
+			<subaction name='refreshList' />
+			<subaction name='acquireList' />
+			<subaction name='searchEntity' />
+			<subaction name='processQuery' /><subaction name='backToQuery' />
+			<subaction name='generatePdf' />
+			<subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='executeAction' />
+			<subaction name='returnAction' />
+			<subaction name='eventOnChange' />
+		</action>
+		<action name='query.MonitorDocumentsAction'>
+			<subaction name='init' />
+			<subaction name='search' />
+			<subaction name='filter' />
+			<subaction name='order' />
+			<subaction name='content' />
+			<subaction name='searchCont'/>
+			<subaction name='backToList' />
+		</action>
+		<action name='query.MonitorProcessesAction'><subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='detail' />
+			<subaction name='tasks' />
+			<subaction name='showTasks' />
+			<subaction name='backToList' />
+			<subaction name='detailTask' />
+			<subaction name='backToTask' />
+			<subaction name='detailSub' />
+			<subaction name='tasksSub' />
+			<subactionname='backTasks' />
+			<subaction name='generatePdf' />
+			<subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='generateTaskPdf' />
+			<subaction name='generateTaskCsv' />
+			<subaction name='generateTaskExcel' />
+			<subaction name='tasksTask' />
+			<subactionname='backTask' />
+		</action>
+		<action name='query.MonitorTasksAction'>
+			<subaction name='init'/>
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='history' />
+			<subaction name='backToList' />
+			<subaction name='generatePdf' /><subaction name='generateCsv' />
+			<subaction name='generateExcel' />
+			<subaction name='generateTaskPdf' />
+			<subaction name='generateTaskCsv' />
+			<subaction name='generateTaskExcel' />
+			<subaction name='details' />
+			<subaction name='detailsHis' />
+			<subaction name='backToHistory' /></action>
+	</group>
+	<group name='configuration'>
+		<action name='configuration.EnvParametersAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+		<action name='configuration.ParametersAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+	</group>
+	<group name='administration'>
+		<action name='administration.EntitiesStatusAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.ClasificationsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subactionname='clone' />
+			<subaction name='confClone' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.FormAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subactionname='clone' />
+			<subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='xmlFormDefinition' />
+			<subaction name='xmlAttributes' />
+			<subaction name='xmlFormEvents' /><subaction name='xmlFieldEvents' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlProperties' />
+			<subaction name='xmlModalQuery' />
+			<subaction name='getLabels' />
+			<subaction name='xmlBind' />
+			<subaction name='xmlModalData//para traer datos de modals' />
+			<subaction name='xmlEntAtt' />
+			<subaction name='xmlEntities' />
+		</action>
+		<action name='administration.BusinessClassesAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='nextUpdate' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm'/>
+			<subaction name='backToList' />
+			<subaction name='backFirst' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' /><subaction name='views' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.TasksAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList'/>
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' /><subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='addPools' />
+			<subaction name='alterMessage' />
+		</action>
+		<action name='administration.RolAction'>
+			<subactionname='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='administration.DocumentationAction'>
+			<subaction name='init' />
+			<subaction name='generate' />
+		</action>
+		<action name='administration.ProcessAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm'/>
+			<subaction name='validate' />
+			<subaction name='save' />
+			<subaction name='backToPro' /><subaction name='backToVer' />
+			<subaction name='backToList' />
+			<subaction name='backToListWOk' />
+			<subaction name='viewDeps' />
+			<subaction name='viewVersion' />
+			<subaction name='viewProcess' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='initPro' />
+			<subaction name='order' />
+			<subaction name='addPools' /><subaction name='alterMessage' />
+			<subaction name='versions' />
+			<subaction name='recover'/>
+			<subaction name='xmlAttributes' />
+			<subaction name='xmlProDefinition' />
+			<subaction name='xmlTasks' />
+			<subaction name='xmlProcesses' />
+			<subaction name='xmlPools' />
+			<subaction name='xmlEntForms' />
+			<subaction name='xmlProForms' />
+			<subaction name='xmlEvents' />
+			<subaction name='xmlStates' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlBindings' />
+			<subaction name='xmlRoles' />
+			<subaction name='xmlValCondition' />
+			<subaction name='getLabels'/>
+		</action>
+		<action name='administration.EntitiesAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='openRelModal' />
+			<subaction name='initEnt' />
+			<subaction name='order' />
+			<subaction name='getLabels' />
+			<subaction name='xmlEvents' />
+			<subaction name='xmlClasses' />
+			<subaction name='xmlBindings' />
+			<subaction name='xmlAttributes //FIXME verificar si va' />
+			<subaction name='xmlEventsDefinition' />
+		</action>
+		<action name='administration.DataDictionaryAction'>
+			<subactionname='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' /><subaction name='order' />
+			<subaction name='download' />
+			<subaction name='upload' />
+			<subaction name='doUpload' />
+			<subaction name='changeDb' />
+		</action>
+		<action name='administration.ConnectionsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone'/>
+			<subaction name='confClone' />
+			<subaction name='order' />
+			<subaction name='test' />
+		</action>
+	</group>
+	<group name='security'>
+		<action name='security.FunctionalityAction'>
+			<subaction name='init' />
+			<subaction name='initAmb' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='dwModal' />
+			<subaction name='dwAdd' />
+		</action>
+		<action name='security.GroupsAction'>
+			<subaction name='init' />
+			<subaction name='initAmbGro' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='security.LabelsAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='download' />
+			<subaction name='viewDeps' />
+			<subaction name='order' />
+		</action>
+		<action name='security.LanguageAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='changeLang' />
+			<subaction name='confirmLang' />
+		</action>
+		<action name='security.TreeViewAction'></action>
+		<action name='security.EnvironmentsAction'>
+			<subaction name='init' />
+			<subactionname='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='initData'/>
+			<subaction name='reloadLangs' />
+			<subaction name='order' />
+		</action>
+		<action name='security.GroupHierarchyAction'>
+			<subaction name='init' />
+			<subaction name='initAmb' />
+			<subaction name='addPools' />
+			<subaction name='removePools' />
+			<subaction name='confirm' />
+		</action>
+		<action name='security.ProfilesAction'>
+			<subaction name='init' />
+			<subaction name='initAmbPer' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' /><subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' /><subaction name='search' />
+			<subaction name='openModal' />
+			<subaction name='order' />
+			<subaction name='addFnc' />
+		</action>
+		<action name='security.ChangePwdAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+		</action>
+		<action name='security.ResetPwdAction'>
+			<subaction name='init' />
+			<subaction name='reset' />
+			<subaction name='showModal' />
+		</action><action name='security.LoginAction'>
+		</action>
+		<action name='security.MessagesAction'>
+			<subaction name='init' />
+			<subaction name='initAmbMes' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='order' />
+		</action>
+		<action name='security.MigrationAction'>
+			<subaction name='init' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='expstep1' />
+			<subaction name='expstep2' />
+			<subactionname='expconfirm' />
+			<subaction name='impstep1' />
+			<subaction name='impstep2' />
+			<subactionname='impconfirm' />
+			<subaction name='impshowobject' />
+			<subaction name='impconflicts' /><subaction name='impconflictobjects' />
+			<subaction name='updateobject' />
+			<subaction name='removeobject' />
+			<subaction name='modifyobject' />
+			<subaction name='modifyobjectconfirm' />
+			<subaction name='mapobject' />
+			<subaction name='impbackstep2' />
+			<subaction name='impbackconflicts' />
+			<subaction name='impbackshowobject' />
+			<subaction name='impbackconflictobjects' />
+			<subaction name='impupdates' />
+			<subaction name='impupdateobjects' />
+			<subaction name='impbackupdates' />
+			<subaction name='removeupdateobject' />
+			<subaction name='impconflictmap' />
+			<subaction name='impconflictupdate' />
+			<subaction name='impconflictremove' />
+		</action>
+		<action name='security.UserAction'>
+			<subaction name='init' />
+			<subaction name='initAmbUsu' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='clone' />
+			<subaction name='confClone' />
+			<subaction name='reactivate' />
+			<subaction name='reactivateClone' />
+			<subaction name='step2' />
+			<subaction name='backToStep1' />
+			<subaction name='order' />
+		</action>
+	</group>
+	<group name='analitic'>
+		<action name='analitic.DatawareAction'>
+			<subaction name='init' />
+			<subaction name='change' />
+			<subaction name='loadView' />
+			<subaction name='loadCube' />
+			<subaction name='loadCard' />
+			<subaction name='test' />
+			<subaction name='testBuild' />
+		</action>
+	</group>
+	<group name='scheduler'>
+		<action name='scheduler.SchedulerAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' /><subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='reload' /><subaction name='order' />
+		</action>
+	</group>
+	<group name='execution'>
+		<action name='execution.ProPriorityAction'>
+			<subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='viewProcess' />
+			<subaction name='backToList' />
+			<subaction name='confirm' />
+		</action>
+		<action name='execution.TasksReleaseAction'>
+			<subaction name='init' />
+			<subaction name='initHierarchy' />
+			<subaction name='setFilter' />
+			<subaction name='release' />
+			<subaction name='confirm' />
+			<subaction name='order' /><subaction name='backToList' />
+		</action>
+		<action name='execution.ProStartAction'>
+			<subaction name='search' />
+			<subaction name='initCancel' />
+			<subaction name='startCancel' />
+			<subaction name='startAlter' />
+		</action>
+		<action name='execution.FormAction'>
+			<subaction name='fireFieldEvent' />
+			<subaction name='fireFormEvent' />
+			<subaction name='fireModal' />
+			<subaction name='uploadFile' />
+			<subaction name='updateFile' />
+			<subaction name='removeFile' />
+			<subaction name='confirmDoc' />
+			<subaction name='download' />
+		</action>
+		<action name='execution.EntInstanceAction'>
+			<subaction name='init' />
+			<subaction name='new' />
+			<subaction name='update' />
+			<subaction name='remove' />
+			<subaction name='confirm' />
+			<subaction name='backToList' />
+			<subaction name='viewDeps' />
+			<subaction name='search' />
+			<subaction name='getProcess' />
+			<subaction name='startCreation' />
+			<subaction name='order' />
+		</action>
+		<action name='execution.ProRollbackAction'>
+			<subaction name='init' />
+			<subaction name='filter' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='detail' />
+			<subaction name='tasks' />
+			<subaction name='orderTasks' />
+			<subaction name='backToList' />
+			<subaction name='rollback' />
+		</action>
+		<action name='execution.TasksListAction'>
+			<subaction name='init' /><subaction name='order' />
+			<subaction name='filterAuto' />
+			<subaction name='removeFilter'/>
+			<subaction name='filterModal' />
+			<subaction name='columnModal' />
+			<subaction name='setFilter' />
+			<subaction name='setColumn' />
+			<subaction name='work' />
+			<subaction name='release'/>
+			<subaction name='acquire' />
+			<subaction name='refresh' />
+		</action>
+		<action name='execution.TaskAction'>
+			<subaction name='getTask' />
+			<subaction name='saveTask' />
+			<subaction name='nextStep' />
+			<subaction name='lastStep' />
+			<subaction name='confirm' />
+			<subaction name='confirmPath' />
+			<subaction name='confirmPool' />
+			<subaction name='startProcess' />
+			<subaction name='exit' />
+			<subaction name='release' />
+			<subaction name='delegate' />
+			<subaction name='elevate' />
+		</action>
+		<action name='execution.NotificationAction'>
+			<subaction name='init' />
+			<subaction name='initGeneral' />
+			<subaction name='backToList' />
+			<subaction name='search' />
+			<subaction name='order' />
+			<subaction name='view' />
+		</action>
+		<action name='execution.TaskReasignAction'>
+			<subaction name='init' />
+			<subaction name='initHierarchy' />
+			<subaction name='setFilter' />
+			<subaction name='reasign' />
+			<subaction name='confirm' />
+			<subaction name='order' />
+			<subaction name='backToList' />
+		</action>
+	</group>
+</licence>
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Making licence replacementes
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Starting licence document parsing
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Initializing auxiliary structures
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Iterating over document nodes
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Getting company information
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Getting expiration information
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Getting expiration units
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Finished iterating over document nodes
+
+[DEBUG] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Finished loading structures
+
+[INFO ] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Security server initialized
+
+[INFO ] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Starting security server@DESKTOP-PN7D238:10000
+
+[INFO ] [02-07-2020 07:30:50] [APPLICATION_LOGGER] - [2020-07-02,07:30:50](Thread:SECURITY SERVER-7544498) --> Security server started
+
+[DEBUG] [02-07-2020 07:30:51] [APPLICATION_LOGGER] - [2020-07-02,07:30:51](Thread:SECURITY SERVER-7544498) --> Starting session timeout thread
+
+[DEBUG] [02-07-2020 07:30:51] [APPLICATION_LOGGER] - [2020-07-02,07:30:51](Thread:SECURITY SERVER-7544498) --> Starting session checkpoint thread
+
+[DEBUG] [02-07-2020 07:31:19] [APPLICATION_LOGGER] - [2020-07-02,07:31:19](Thread:Security Server Thread-16613661) --> Accepted new connection at: 49933 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:19] [APPLICATION_LOGGER] - [2020-07-02,07:31:19](Thread:Security Server Thread-16613661) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='login'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:31:19] [APPLICATION_LOGGER] - [2020-07-02,07:31:19](Thread:Security Server Thread-16613661) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:19] [APPLICATION_LOGGER] - [2020-07-02,07:31:19](Thread:Security Server Thread-16613661) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-5559851) --> Accepted new connection at: 49936 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-5559851) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-5559851) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-5559851) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-27161104) --> Accepted new connection at: 49937 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-27161104) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-27161104) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:24] [APPLICATION_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-27161104) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:31:34] [APPLICATION_LOGGER] - [2020-07-02,07:31:34](Thread:Security Server Thread-14959965) --> Accepted new connection at: 49943 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:34] [APPLICATION_LOGGER] - [2020-07-02,07:31:34](Thread:Security Server Thread-14959965) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Global Parameters Administration - null' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:31:34] [APPLICATION_LOGGER] - [2020-07-02,07:31:34](Thread:Security Server Thread-14959965) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:31:34] [APPLICATION_LOGGER] - [2020-07-02,07:31:34](Thread:Security Server Thread-14959965) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:00] [APPLICATION_LOGGER] - [2020-07-02,07:32:00](Thread:Security Server Thread-6863139) --> Accepted new connection at: 49978 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:00] [APPLICATION_LOGGER] - [2020-07-02,07:32:00](Thread:Security Server Thread-6863139) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Global Parameters Administration - confirm' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:00] [APPLICATION_LOGGER] - [2020-07-02,07:32:00](Thread:Security Server Thread-6863139) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:00] [APPLICATION_LOGGER] - [2020-07-02,07:32:00](Thread:Security Server Thread-6863139) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:02] [APPLICATION_LOGGER] - [2020-07-02,07:32:02](Thread:Security Server Thread-19219699) --> Accepted new connection at: 49980 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:02] [APPLICATION_LOGGER] - [2020-07-02,07:32:02](Thread:Security Server Thread-19219699) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Global Parameters Administration - reloadAfterConfirm' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:02] [APPLICATION_LOGGER] - [2020-07-02,07:32:02](Thread:Security Server Thread-19219699) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:02] [APPLICATION_LOGGER] - [2020-07-02,07:32:02](Thread:Security Server Thread-19219699) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:12] [APPLICATION_LOGGER] - [2020-07-02,07:32:12](Thread:Security Server Thread-2056119) --> Accepted new connection at: 49991 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:13] [APPLICATION_LOGGER] - [2020-07-02,07:32:13](Thread:Security Server Thread-2056119) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - null' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:13] [APPLICATION_LOGGER] - [2020-07-02,07:32:13](Thread:Security Server Thread-2056119) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:13] [APPLICATION_LOGGER] - [2020-07-02,07:32:13](Thread:Security Server Thread-2056119) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-24743248) --> Accepted new connection at: 49993 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-24743248) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-24743248) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-24743248) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-26727632) --> Accepted new connection at: 49994 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-26727632) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-26727632) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-26727632) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-25247337) --> Accepted new connection at: 49995 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-25247337) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - page' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-25247337) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:15] [APPLICATION_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-25247337) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-23342191) --> Accepted new connection at: 49997 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-23342191) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - checkLockProcess' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-23342191) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-23342191) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-13403992) --> Accepted new connection at: 49998 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-13403992) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - update' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-13403992) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:18] [APPLICATION_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-13403992) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-30103312) --> Accepted new connection at: 50005 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-30103312) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-30103312) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-30103312) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-4540740) --> Accepted new connection at: 50006 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-4540740) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-19832747) --> Accepted new connection at: 50009 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:30] [APPLICATION_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-19832747) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadNotifications' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-19832747) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-19832747) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-32194309) --> Accepted new connection at: 50008 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-32194309) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - setEntity' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-32194309) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-32194309) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-683154) --> Accepted new connection at: 50007 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-683154) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadProcessQueries' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-683154) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-683154) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-4540740) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-4540740) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-12430257) --> Accepted new connection at: 50010 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-12430257) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadMonitorForms' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-12430257) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-12430257) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-31347581) --> Accepted new connection at: 50012 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-31347581) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadClassifications' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-31347581) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-31347581) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-20612240) --> Accepted new connection at: 50011 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-20612240) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - ajaxLoadCurrent' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-20612240) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-20612240) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-14965345) --> Accepted new connection at: 50013 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-14965345) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - getCubeDependenciesOnRemove' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-14965345) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-14965345) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-17314119) --> Accepted new connection at: 50015 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-17314119) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadDocTypePermitted' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-17314119) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-17314119) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-18741203) --> Accepted new connection at: 50014 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-18741203) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadPermissions' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-18741203) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:31] [APPLICATION_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-18741203) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-30901104) --> Accepted new connection at: 50056 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-30901104) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-30901104) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-30901104) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-2122100) --> Accepted new connection at: 50057 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-2122100) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-2122100) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:32:55] [APPLICATION_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-2122100) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-19790854) --> Accepted new connection at: 50061 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-19790854) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - null' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-19790854) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-19790854) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-4501144) --> Accepted new connection at: 50062 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-4501144) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-4501144) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-4501144) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-28628471) --> Accepted new connection at: 50063 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-28628471) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-28628471) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:02] [APPLICATION_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-28628471) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:03] [APPLICATION_LOGGER] - [2020-07-02,07:33:03](Thread:Security Server Thread-10517822) --> Accepted new connection at: 50065 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:03] [APPLICATION_LOGGER] - [2020-07-02,07:33:03](Thread:Security Server Thread-10517822) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - page' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:03] [APPLICATION_LOGGER] - [2020-07-02,07:33:03](Thread:Security Server Thread-10517822) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:03] [APPLICATION_LOGGER] - [2020-07-02,07:33:03](Thread:Security Server Thread-10517822) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:05] [APPLICATION_LOGGER] - [2020-07-02,07:33:05](Thread:Security Server Thread-31861035) --> Accepted new connection at: 50067 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:05] [APPLICATION_LOGGER] - [2020-07-02,07:33:05](Thread:Security Server Thread-31861035) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - checkLockProcess' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:05] [APPLICATION_LOGGER] - [2020-07-02,07:33:05](Thread:Security Server Thread-31861035) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:05] [APPLICATION_LOGGER] - [2020-07-02,07:33:05](Thread:Security Server Thread-31861035) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:06] [APPLICATION_LOGGER] - [2020-07-02,07:33:06](Thread:Security Server Thread-18332601) --> Accepted new connection at: 50068 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:06] [APPLICATION_LOGGER] - [2020-07-02,07:33:06](Thread:Security Server Thread-18332601) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - update' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:06] [APPLICATION_LOGGER] - [2020-07-02,07:33:06](Thread:Security Server Thread-18332601) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:06] [APPLICATION_LOGGER] - [2020-07-02,07:33:06](Thread:Security Server Thread-18332601) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:07] [APPLICATION_LOGGER] - [2020-07-02,07:33:07](Thread:Security Server Thread-21560974) --> Accepted new connection at: 50070 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:07] [APPLICATION_LOGGER] - [2020-07-02,07:33:07](Thread:Security Server Thread-21560974) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:07] [APPLICATION_LOGGER] - [2020-07-02,07:33:07](Thread:Security Server Thread-21560974) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:07] [APPLICATION_LOGGER] - [2020-07-02,07:33:07](Thread:Security Server Thread-21560974) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:08] [APPLICATION_LOGGER] - [2020-07-02,07:33:08](Thread:Security Server Thread-2850255) --> Accepted new connection at: 50071 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:08] [APPLICATION_LOGGER] - [2020-07-02,07:33:08](Thread:Security Server Thread-2850255) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:08] [APPLICATION_LOGGER] - [2020-07-02,07:33:08](Thread:Security Server Thread-2850255) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:08] [APPLICATION_LOGGER] - [2020-07-02,07:33:08](Thread:Security Server Thread-2850255) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-13670984) --> Accepted new connection at: 50089 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21427542) --> Accepted new connection at: 50088 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17425980) --> Accepted new connection at: 50091 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17425980) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadNotifications' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21427542) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadProcessQueries' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21427542) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21427542) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-13670984) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - setEntity' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-13670984) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-13670984) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17425980) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17425980) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-24215155) --> Accepted new connection at: 50092 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-24215155) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadClassifications' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-24215155) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-24215155) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21965060) --> Accepted new connection at: 50096 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21965060) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - getCubeDependenciesOnRemove' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21965060) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21965060) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-23021907) --> Accepted new connection at: 50095 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-23021907) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - ajaxLoadCurrent' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-23021907) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-23021907) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-31687964) --> Accepted new connection at: 50094 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-31687964) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadMonitorForms' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-31687964) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-31687964) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-32932158) --> Accepted new connection at: 50093 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-32932158) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadPermissions' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-32932158) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-32932158) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17537895) --> Accepted new connection at: 50097 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17537895) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - loadDocTypePermitted' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17537895) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:24] [APPLICATION_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17537895) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-25559035) --> Accepted new connection at: 50109 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-25559035) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - list' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-25559035) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-25559035) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-27222177) --> Accepted new connection at: 50110 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-27222177) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getSecurityInformation'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-27222177) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-27222177) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-5019465) --> Accepted new connection at: 50111 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-5019465) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='getMaxNominatedUsers'><data application='APIA' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-5019465) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:35] [APPLICATION_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-5019465) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:36] [APPLICATION_LOGGER] - [2020-07-02,07:33:36](Thread:Security Server Thread-3202973) --> Accepted new connection at: 50113 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:36] [APPLICATION_LOGGER] - [2020-07-02,07:33:36](Thread:Security Server Thread-3202973) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - page' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:36] [APPLICATION_LOGGER] - [2020-07-02,07:33:36](Thread:Security Server Thread-3202973) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:36] [APPLICATION_LOGGER] - [2020-07-02,07:33:36](Thread:Security Server Thread-3202973) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:40] [APPLICATION_LOGGER] - [2020-07-02,07:33:40](Thread:Security Server Thread-10983763) --> Accepted new connection at: 50120 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:40] [APPLICATION_LOGGER] - [2020-07-02,07:33:40](Thread:Security Server Thread-10983763) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - initProcess' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:40] [APPLICATION_LOGGER] - [2020-07-02,07:33:40](Thread:Security Server Thread-10983763) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:40] [APPLICATION_LOGGER] - [2020-07-02,07:33:40](Thread:Security Server Thread-10983763) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:44] [APPLICATION_LOGGER] - [2020-07-02,07:33:44](Thread:Security Server Thread-21436131) --> Accepted new connection at: 50143 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:44] [APPLICATION_LOGGER] - [2020-07-02,07:33:44](Thread:Security Server Thread-21436131) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='requestPermission'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' module='base.administration' functionality='Processes Design - refresh' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:44] [APPLICATION_LOGGER] - [2020-07-02,07:33:44](Thread:Security Server Thread-21436131) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:44] [APPLICATION_LOGGER] - [2020-07-02,07:33:44](Thread:Security Server Thread-21436131) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:33:52] [APPLICATION_LOGGER] - [2020-07-02,07:33:52](Thread:Security Server Thread-9667277) --> Accepted new connection at: 50152 for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:52] [APPLICATION_LOGGER] - [2020-07-02,07:33:52](Thread:Security Server Thread-9667277) --> Starting the processing of request data: <?xml version="1.0" encoding="ISO-8859-1" ?><request><operation name='logout'><data application='APIA' login='admin' candidateid='' host='DESKTOP-PN7D238' port='8282' sessionid='EDC94F83F855CCF158E1475C0E93843F' /></operation></request>
+
+[DEBUG] [02-07-2020 07:33:52] [APPLICATION_LOGGER] - [2020-07-02,07:33:52](Thread:Security Server Thread-9667277) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:33:52] [APPLICATION_LOGGER] - [2020-07-02,07:33:52](Thread:Security Server Thread-9667277) --> Socket: Security Server Thread closed.
+
+[DEBUG] [02-07-2020 07:34:17] [APPLICATION_LOGGER] - [2020-07-02,07:34:17](Thread:Security Server Thread-28059862) --> Accepted new connection at: 50187 for socket: Security Server Thread
+
+[INFO ] [02-07-2020 07:34:17] [APPLICATION_LOGGER] - [2020-07-02,07:34:17](Thread:Security Server Thread-28059862) --> Received query command
+
+[DEBUG] [02-07-2020 07:34:17] [APPLICATION_LOGGER] - [2020-07-02,07:34:17](Thread:Security Server Thread-28059862) --> Sending answer for socket: Security Server Thread
+
+[DEBUG] [02-07-2020 07:34:17] [APPLICATION_LOGGER] - [2020-07-02,07:34:17](Thread:Security Server Thread-28059862) --> Socket: Security Server Thread closed.
+

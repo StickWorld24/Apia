@@ -1,0 +1,32 @@
+[DEBUG] [02-07-2020 07:30:38] [DebugLogger] - checking html help path
+[DEBUG] [02-07-2020 07:30:38] [DebugLogger] - POSTGRE DB MANAGER
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - [CONNECTION] [328 - com.st.db.dataAccess.ConnectionWrapper@1bb081a] [DOGMA_MANAGER] Retrieve from pool
+[INFO ] [02-07-2020 07:30:39] [DebugLogger] - (-1) localhost-startStop-1 : 1593685839523 : SQL (usr_login=n/a) = [328 - com.st.db.dataAccess.ConnectionWrapper@1bb081a] [USER=n/a]SELECT * FROM parameters
+[INFO ] [02-07-2020 07:30:39] [DebugLogger] - (26) localhost-startStop-1 : 1593685839523 : SQL (usr_login=n/a) = [328 - com.st.db.dataAccess.ConnectionWrapper@1bb081a] [USER=n/a]SELECT * FROM parameters
+[INFO ] [02-07-2020 07:30:39] [DebugLogger] - (-1) localhost-startStop-1 : 1593685839569 : SQL (usr_login=n/a) = [328 - com.st.db.dataAccess.ConnectionWrapper@1bb081a] [USER=n/a]SELECT cp.*,p.prj_name FROM custom_parameters cp left outer join project p on cp.prj_id = p.prj_id_auto and cp.env_id = p.env_id WHERE cp.reg_status = 0
+[INFO ] [02-07-2020 07:30:39] [DebugLogger] - (30) localhost-startStop-1 : 1593685839569 : SQL (usr_login=n/a) = [328 - com.st.db.dataAccess.ConnectionWrapper@1bb081a] [USER=n/a]SELECT cp.*,p.prj_name FROM custom_parameters cp left outer join project p on cp.prj_id = p.prj_id_auto and cp.env_id = p.env_id WHERE cp.reg_status = 0
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - [CONNECTION] [328 - com.st.db.dataAccess.ConnectionWrapper@1bb081a] [DOGMA_MANAGER] Closed (Time: 160)
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Can not write content on directory: C:/ApiaOnABox/Apia/App/logs/debug.log
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Directory C:/ApiaOnABox/Apia/App/temp has been created
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Can not write content on directory: C:/ApiaOnABox/Apia/App/Dispatcher.xml
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Directory C:/ApiaOnABox/Apia/App/docs/qry has been created
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Directory /webapps/APIA/Docs/chat/log has been created
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Directory /webapps/APIA/Docs/chat/index has been created
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Directory C:/ApiaOnABox/Apia/App/temp/ApiaWebdavRepository has been created
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - [CONNECTION] [328 - com.st.db.dataAccess.ConnectionWrapper@12e7de8] [DOGMA_MANAGER] Retrieve from pool
+[INFO ] [02-07-2020 07:30:39] [DebugLogger] - (-1) localhost-startStop-1 : 1593685839650 : SQL (usr_login=n/a) = [328 - com.st.db.dataAccess.ConnectionWrapper@12e7de8] [USER=n/a]SELECT * FROM images WHERE img_flags LIKE '0%' ORDER BY img_name
+[INFO ] [02-07-2020 07:30:39] [DebugLogger] - (29) localhost-startStop-1 : 1593685839650 : SQL (usr_login=n/a) = [328 - com.st.db.dataAccess.ConnectionWrapper@12e7de8] [USER=n/a]SELECT * FROM images WHERE img_flags LIKE '0%' ORDER BY img_name
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - [CONNECTION] [328 - com.st.db.dataAccess.ConnectionWrapper@12e7de8] [DOGMA_MANAGER] Closed (Time: 29)
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Starting server engine (v. 0.9.9.20190425)
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Creating monitors threads
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Starting monitors threads
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Ring strategy: ROUNDROBIN - chat.core.ringStrategy.RoundRobinRingStrategyAlgorithm
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Ring time: 5000
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Forbidden words filter: NONE
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - No answer action: NONE
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Server started
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Starting to listen commands at port: 5555
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Starting to listen transfers at port: 5556
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Ready to accept connections
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - Ready to accept file transfer
+[DEBUG] [02-07-2020 07:30:39] [DebugLogger] - New user registration: 1 as Apia

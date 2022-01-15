@@ -1,0 +1,105 @@
+.cm-s-nightlion {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: inconsolata, monospace;
+	letter-spacing: 0.3px;
+	word-spacing: 1px;
+	color: #9e9e9e;
+	background: #1a1a1a;
+}
+.cm-s-nightlion .CodeMirror-lines {
+	padding: 8px 0;
+}
+.cm-s-nightlion .CodeMirror-gutters {
+	box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+	background-color: #1a1a1a;
+	padding-right: 1px;
+	z-index: 3;
+	border: none;
+}
+.cm-s-nightlion div.CodeMirror-cursor {
+	border-left: 3px solid #9e9e9e;
+}
+.cm-s-nightlion .CodeMirror-activeline-background {
+	background: #ffffff08;
+}
+.cm-s-nightlion .CodeMirror-selected {
+	background: #ddf0ff33;
+}
+.cm-s-nightlion .cm-keyword {
+	color: #9e9e9e;
+}
+.cm-s-nightlion .cm-string {
+	color: #9e9e9e;
+	font-weight: bold;
+}
+.cm-s-nightlion .cm-property {
+/* 	color: #9e9e9e; */
+}
+.cm-s-nightlion .cm-comment {
+	font-style: italic;
+/* 	color: #9e9e9e; */
+}
+.cm-s-nightlion .cm-def {
+/* 	color: #9e9e9e; */
+}
+.cm-s-nightlion .cm-atom {
+/* 	color: #9e9e9e; */
+}
+.cm-s-nightlion .cm-number {
+/* 	color: #9e9e9e; */
+	font-weight: bold;
+}
+.cm-s-nightlion .cm-operator {
+/* 	color: #9e9e9e; */
+}
+
+.cm-s-nightlion .CodeMirror-linenumber-no-animation {
+	color: italic;
+/* 	animation: blinker 1s linear infinite; */
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.cm-s-nightlion .CodeMirror-linenumber {
+	color: italic;
+/* 	animation: blinker 1s linear infinite; */
+	font-weight: bold;
+	font-size: 15px;
+}
+
+@keyframes blinker {
+	50% {opacity: 0;}
+}
+
+.CodeMirror-style-bold {
+	font-weight: bold;
+}
+
+
+
+.CodeMirror-style-normal {
+	font-weight: normal;
+}  
+
+.CodeMirror-style-hide-gutter {
+	color: #1a1a1a !important;
+}
+
+.CodeMirror-style-show-text {
+	color: #9e9e9e !important;
+}
+
+.CodeMirror-style-error-mssg {
+	color: red !important;
+}
+
+.CodeMirror-style-warning-mssg {
+	color: yellow !important;
+}
+
+.CodeMirror-style-info-mssg {
+	color: green !important;
+}

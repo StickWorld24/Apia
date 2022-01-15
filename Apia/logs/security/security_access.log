@@ -1,0 +1,850 @@
+[DEBUG] [08-04-2020 15:20:46] [ACCESS_LOGGER] - [2020-04-08,15:20:46](Thread:Security Server Thread-3445715) --> <audit operation='requestLogin'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='458FAD37E29DB11A5AA3290A4BEFEC75'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:14] [ACCESS_LOGGER] - [2020-04-08,15:44:14](Thread:Security Server Thread-3550555) --> <audit operation='requestLogin'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:28] [ACCESS_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-28671759) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:28] [ACCESS_LOGGER] - [2020-04-08,15:44:28](Thread:Security Server Thread-24574545) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:35] [ACCESS_LOGGER] - [2020-04-08,15:44:35](Thread:Security Server Thread-26365867) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - null'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:36] [ACCESS_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-16276424) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:36] [ACCESS_LOGGER] - [2020-04-08,15:44:36](Thread:Security Server Thread-30605873) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:37] [ACCESS_LOGGER] - [2020-04-08,15:44:37](Thread:Security Server Thread-7614124) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - page'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:43] [ACCESS_LOGGER] - [2020-04-08,15:44:43](Thread:Security Server Thread-21638566) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - update'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:47] [ACCESS_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-13209678) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:47] [ACCESS_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29120777) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:47] [ACCESS_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-16956086) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - getUserPools'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:47] [ACCESS_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-21169223) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - getUserStyles'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:47] [ACCESS_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-29215660) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - getUserOrgRoles'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:47] [ACCESS_LOGGER] - [2020-04-08,15:44:47](Thread:Security Server Thread-2116460) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - getUserEnvironments'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:48] [ACCESS_LOGGER] - [2020-04-08,15:44:48](Thread:Security Server Thread-4151129) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - getUserProfiles'
+</>
+
+
+[DEBUG] [08-04-2020 15:44:51] [ACCESS_LOGGER] - [2020-04-08,15:44:51](Thread:Security Server Thread-27939717) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Global Parameters Administration - null'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:08] [ACCESS_LOGGER] - [2020-04-08,15:45:08](Thread:Security Server Thread-18323928) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - confirm'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:10] [ACCESS_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12008209) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - list'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:10] [ACCESS_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-21297176) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:10] [ACCESS_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-12829260) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:10] [ACCESS_LOGGER] - [2020-04-08,15:45:10](Thread:Security Server Thread-941158) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Users Administration - page'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:20] [ACCESS_LOGGER] - [2020-04-08,15:45:20](Thread:Security Server Thread-3700444) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Global Parameters Administration - null'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:39] [ACCESS_LOGGER] - [2020-04-08,15:45:39](Thread:Security Server Thread-28684582) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Processes Design - null'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:41] [ACCESS_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-26494445) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:41] [ACCESS_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-21947420) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:41] [ACCESS_LOGGER] - [2020-04-08,15:45:41](Thread:Security Server Thread-1273849) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Processes Design - page'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:52] [ACCESS_LOGGER] - [2020-04-08,15:45:52](Thread:Security Server Thread-31980402) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Business Classes Design - null'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:53] [ACCESS_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-23474319) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:53] [ACCESS_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-21726188) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:45:53] [ACCESS_LOGGER] - [2020-04-08,15:45:53](Thread:Security Server Thread-737709) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Business Classes Design - page'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:01] [ACCESS_LOGGER] - [2020-04-08,15:46:01](Thread:Security Server Thread-30886126) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Business Classes Design - update'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:04] [ACCESS_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-25143812) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:04] [ACCESS_LOGGER] - [2020-04-08,15:46:04](Thread:Security Server Thread-13006814) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:05] [ACCESS_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-31038511) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Business Classes Design - loadPermissions'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:05] [ACCESS_LOGGER] - [2020-04-08,15:46:05](Thread:Security Server Thread-23851298) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Business Classes Design - loadParams'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:24] [ACCESS_LOGGER] - [2020-04-08,15:46:24](Thread:Security Server Thread-27082502) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Business Classes Design - list'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:25] [ACCESS_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-29876358) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:25] [ACCESS_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32328888) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [08-04-2020 15:46:25] [ACCESS_LOGGER] - [2020-04-08,15:46:25](Thread:Security Server Thread-32360074) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='012E1FDF9A0958B44552632A3AB1323B'
+	module='base.administration'
+	functionality='Business Classes Design - page'
+</>
+
+
+[DEBUG] [02-07-2020 07:31:19] [ACCESS_LOGGER] - [2020-07-02,07:31:19](Thread:Security Server Thread-16613661) --> <audit operation='requestLogin'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+</>
+
+
+[DEBUG] [02-07-2020 07:31:24] [ACCESS_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-5559851) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:31:24] [ACCESS_LOGGER] - [2020-07-02,07:31:24](Thread:Security Server Thread-27161104) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:31:34] [ACCESS_LOGGER] - [2020-07-02,07:31:34](Thread:Security Server Thread-14959965) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Global Parameters Administration - null'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:00] [ACCESS_LOGGER] - [2020-07-02,07:32:00](Thread:Security Server Thread-6863139) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Global Parameters Administration - confirm'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:02] [ACCESS_LOGGER] - [2020-07-02,07:32:02](Thread:Security Server Thread-19219699) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Global Parameters Administration - reloadAfterConfirm'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:13] [ACCESS_LOGGER] - [2020-07-02,07:32:13](Thread:Security Server Thread-2056119) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - null'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:15] [ACCESS_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-24743248) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:15] [ACCESS_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-26727632) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:15] [ACCESS_LOGGER] - [2020-07-02,07:32:15](Thread:Security Server Thread-25247337) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - page'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:18] [ACCESS_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-23342191) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - checkLockProcess'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:18] [ACCESS_LOGGER] - [2020-07-02,07:32:18](Thread:Security Server Thread-13403992) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - update'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:30] [ACCESS_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-30103312) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:30] [ACCESS_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-4540740) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:30] [ACCESS_LOGGER] - [2020-07-02,07:32:30](Thread:Security Server Thread-19832747) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadNotifications'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-32194309) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - setEntity'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-683154) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadProcessQueries'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-12430257) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadMonitorForms'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-31347581) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadClassifications'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-20612240) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - ajaxLoadCurrent'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-14965345) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - getCubeDependenciesOnRemove'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-17314119) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadDocTypePermitted'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:31] [ACCESS_LOGGER] - [2020-07-02,07:32:31](Thread:Security Server Thread-18741203) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadPermissions'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:55] [ACCESS_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-30901104) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:32:55] [ACCESS_LOGGER] - [2020-07-02,07:32:55](Thread:Security Server Thread-2122100) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:02] [ACCESS_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-19790854) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - null'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:02] [ACCESS_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-4501144) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:02] [ACCESS_LOGGER] - [2020-07-02,07:33:02](Thread:Security Server Thread-28628471) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:03] [ACCESS_LOGGER] - [2020-07-02,07:33:03](Thread:Security Server Thread-10517822) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - page'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:05] [ACCESS_LOGGER] - [2020-07-02,07:33:05](Thread:Security Server Thread-31861035) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - checkLockProcess'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:06] [ACCESS_LOGGER] - [2020-07-02,07:33:06](Thread:Security Server Thread-18332601) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - update'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:07] [ACCESS_LOGGER] - [2020-07-02,07:33:07](Thread:Security Server Thread-21560974) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:08] [ACCESS_LOGGER] - [2020-07-02,07:33:08](Thread:Security Server Thread-2850255) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17425980) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadNotifications'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21427542) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadProcessQueries'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-13670984) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - setEntity'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-24215155) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadClassifications'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-21965060) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - getCubeDependenciesOnRemove'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-23021907) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - ajaxLoadCurrent'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-31687964) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadMonitorForms'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-32932158) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadPermissions'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:24] [ACCESS_LOGGER] - [2020-07-02,07:33:24](Thread:Security Server Thread-17537895) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - loadDocTypePermitted'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:35] [ACCESS_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-25559035) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - list'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:35] [ACCESS_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-27222177) --> <audit operation='getSecurityInformation'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:35] [ACCESS_LOGGER] - [2020-07-02,07:33:35](Thread:Security Server Thread-5019465) --> <audit operation='getMaxNominatedUsers'
+	application='APIA'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:36] [ACCESS_LOGGER] - [2020-07-02,07:33:36](Thread:Security Server Thread-3202973) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - page'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:40] [ACCESS_LOGGER] - [2020-07-02,07:33:40](Thread:Security Server Thread-10983763) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - initProcess'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:44] [ACCESS_LOGGER] - [2020-07-02,07:33:44](Thread:Security Server Thread-21436131) --> <audit operation='requestPermission'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+	module='base.administration'
+	functionality='Processes Design - refresh'
+</>
+
+
+[DEBUG] [02-07-2020 07:33:52] [ACCESS_LOGGER] - [2020-07-02,07:33:52](Thread:Security Server Thread-9667277) --> <audit operation='requestLogout'
+	application='APIA'
+	login='admin'
+	candidateid=''
+	host='DESKTOP-PN7D238'
+	port='8282'
+	sessionid='EDC94F83F855CCF158E1475C0E93843F'
+</>
+
+

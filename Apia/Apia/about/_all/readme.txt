@@ -1,0 +1,2 @@
+Todos los archivos .properties que se encuentren en esta carpeta, serán visibles en la ventana "acerca de" sin importar el ambiente en que se esté logueado
+los mismos se muestran en orden alfabetico y se visualizan luego de la información de statum y de Apia. 

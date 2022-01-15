@@ -1,0 +1,1329 @@
+body {
+	padding: 0px 10px;
+	outline: none;
+}
+
+#bodyDiv {
+	position: relative;
+}
+
+div.optionsContainer {
+	display: none;
+}
+
+.mobileNonExec div.optionsContainer {
+	display: block;
+}
+
+div.dataContainer {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 15px;
+}
+
+div.bottom {
+	margin-right: 15px;
+}
+
+.tabHolder {
+/* 	fileinput_ancho display: none; */
+	display: none;
+}
+
+.collapseForm {
+	display: none !important;
+	
+}
+
+.float-right-buttons{
+	float:right;
+	width:100%;
+ 
+}
+
+
+
+/* .titImage { */
+/* 	display: inline; */
+/* } */
+
+/* .proTitle { */
+/* 	display: inline; */
+/* 	margin-left: 3px; */
+/* } */
+
+/* .taskTitle { */
+/* 	display: inline; */
+/* } */
+
+.fncDescriptionImgSection {
+	display: inline;
+}
+
+.descInfo {
+	display: inline;
+	position: absolute;
+	top: 5px;
+	margin-left: 10px;
+}
+
+.fncDescriptionText {
+	margin-top: 5px;
+}
+
+#divAdminActEdit .title {
+	display: none;
+}
+
+.grey-hr {
+	border-bottom: 1px solid #CCC;
+	margin-bottom: 10px;
+}
+
+.bottom {
+	margin-right: 355px;
+}
+
+
+div.tabComponent {
+	margin: 0px;
+}
+
+ /*
+div.fncPanel div.button.suggestedAction { 
+    background-color: #00487a !important;
+   box-shadow: 0 2px 0 #1A2F5A;
+     font-size: 1.25em; 
+    margin: 0;
+    border-width: 0px !important;
+}*/
+
+
+
+
+    
+
+/**Button**/
+.gridButtons{
+	display: flex; 
+	justify-content: flex-end;
+}
+
+.gridButton{
+	width: auto;
+	min-heigth:30px;
+	margin-top: 7px!important;
+	margin-right: 7px;
+	text-decoration: underline;
+	color: #0000FF !important;
+	z-index: 5;
+}
+
+.left_result {
+	display: inline-block;
+    margin-bottom: 20px !important;
+    float: right !important;
+    width: 30% !important; /*achicar*/
+}
+
+/* Formulario tipo TABLA */
+.left_result > div {
+	display: inline-block;
+    margin-bottom: 20px;
+    float: right !important;
+    width: 30%; /*achicar*/
+}
+.left_result > div > label {
+	background-color: #F1F1F2;
+    border: 1px solid #E4E5E6;
+	width: 235px; /*achicar*/
+}
+.left_result > div > label > span {
+	width: 50%; /*achicar*/
+}
+.left_result > div > input {
+	width: 50%; /*achicar*/
+	float: right;
+}
+
+/* Fin formulario tipo TABLA */
+
+/********COLOCADO PARA FORMATEAR FORMULARIO*****************/
+.formContainer {
+	border: 1px solid #59595C;
+	margin-top: 20px !important;
+	margin-bottom: 60px !important;
+	padding: 20px 45px 30px 45px;
+}
+
+div.fieldGroup div.title, div.fieldGroup div.field label, input[type=text],
+	input[type=password], select, textarea, div.fieldGroup div.field {
+	color: #141414;
+}
+
+div.fieldGroup div.field span.asLabel {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+	width: 220px;
+	text-align: right;
+ 	display: inline-block;
+	margin-right: 12px;
+	font-size: 16px;
+
+}
+
+div.collapseForm {
+	display: none;
+}
+
+div.formContainer>table>tbody>div.wasTr>div.wasTd,
+div.formContainer>table>tbody>tr>td
+{
+	display: block;
+	padding: 0px;
+}
+
+/* div.formContainer>table>tbody>tr>td>div.exec_field { */
+/* 	padding-top: 10px; */
+/* 	padding-bottom: 10px; */
+/* 	margin-bottom: 7px; */
+/* 	width:100%;  */
+/* } */
+
+
+
+
+/*Alinea el texto "Los campos indicados con * son obligatorios" a la derecha*/
+/* div#E_1110_34.field.exec_field.exec_field_label > span.asLabel.labelField { */
+/*     width: 100% !important; */
+/*     padding: 0px; */
+/*     margin: 0px !important; */
+/*     text-align: right !important;  */
+/* } */
+
+
+.checkbox_left {
+	display: inline-block !important;
+	width: 40.2em !important;
+	margin-bottom: -10px;
+}
+
+.checkbox_right {
+	display: inline-block !important;
+	width: auto !important;
+	margin-bottom: -10px;
+}
+
+.checkbox_right span.asLabel {
+	display: none !important;
+}
+
+
+
+.alinear_checkbox > div {
+	margin-left: 232px !important;
+}
+
+
+.alinear_left {
+	float: left;
+}
+
+.alinear_right {
+	float: right !important;
+}
+
+ 
+ 
+
+
+
+input[disabled] {
+	background-color: #f5f5f5;
+	border-color: #e6e6e6;
+}
+
+.exec_field_label>span.asLabel {
+	width: 100% !important;
+}
+
+/*TABLA*/
+/* div.gridHeader, div.gridBody, div.gridFooter { */
+/* 	width: 100% !important; */
+/* afecta el modal de documentos en la parte de asignacion de usuarios y grupos*/
+/* }  */
+
+div.gridContainer div.gridHeader table thead tr th {
+	font-size: 13px;
+	color: #141414;
+}
+
+div.gridContainer div.gridHeader {
+	background: none !important;
+	background-color: #f4f4f5 !important;
+}
+
+div.gridContainer div.gridFooter {
+	height: 30px;
+	background: none !important;
+/* 	background-color: #f4f4f5 !important; */
+	background-color: white !important;
+}
+
+div.wasTd.css-tbl-sin-botones div.gridContainer div.gridFooter,
+td.css-tbl-sin-botones div.gridContainer div.gridFooter {
+	height: 0px;
+	/*background: url("img/grid/wbg.gif") repeat-x scroll 0 -1px transparent;
+	border-style: none solid solid;
+    border-width: 0 1px 1px;    
+    border-color: #CCCCCC; */
+}
+/*9---------------------------*/
+
+
+div.monitor-area {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.monitor-tree {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.monitor-multiple {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.notSuggestedAction.extendedSize button.genericBtn {
+	width: auto !important;
+	height: auto !important;
+	display: inline-block !important;
+}
+
+/* button.genericBtn.suggestedAction { */
+/* 	width: auto !important; */
+/* 	padding-left: 16px; */
+/* 	padding-right: 16px; */
+/* } */
+
+/*8----------------------*/
+div.dataContainer>div {
+	max-width: 980px;
+	margin: 0px auto;
+}
+
+@media screen and (min-width: 1200px) {
+	div.dataContainer>div {
+		max-width: 1100px;
+	}
+	
+
+}
+
+@media screen and (min-width: 1600px) {
+	div.dataContainer>div {
+		max-width: 1350px;
+	}
+}
+
+.form-action-buttons, .form-action-buttons ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.form-action-buttons button {
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.form-action-buttons .btn-link {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 25px;
+}
+.form-action-buttons li {
+    float: right;
+}
+.form-action-buttons li.action-buttons-second {
+    float: left;
+}
+
+/* Botones de acciÃ³n de formulario */
+    .form-action-buttons {
+        padding-left: 30px;
+    }
+    .form-action-buttons li {
+        float: none;
+    }
+    .form-action-buttons li button {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .form-action-buttons li.action-buttons-primary ul {
+        margin-bottom: 15px;
+    }
+    
+
+/* Botones */
+
+button .icn {
+    vertical-align: middle;
+    background-position: center;
+    width: 20px;
+    margin-right: 5px;
+}
+.left-icn{
+    margin: 0 10px 0 0;
+}
+.btn-sm, .btn, .btn-lg , .btn-default, .btn-primario, .btn-secundario {
+    transition: background-color .5s;
+    line-height: 1.1;
+}
+.btn-sm {
+    padding: 2px 10px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+td .btn-sm, div.wasTd .btn-sm {
+    margin: 10px 0;
+}
+.btn {
+    padding: 4px 15px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.btn-lg {
+    padding: 9px 16px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.btn-default {
+    color: #231F20;
+    background-color: #e4e4e4;
+    border: 1px solid #ccc;
+}
+.btn-default:hover {
+    background-color: #d7d6d6;
+}
+.btn-primario {
+    color: #FFF !important;
+    background-color: #337ab7 !important;
+    box-shadow: 0 2px 0 #1A2F5A !important;    
+    float: initial;
+}
+
+.btn-primario-modal {
+    color: #FFF;
+    background-color: #337ab7;
+    box-shadow: 0 2px 0 #1A2F5A;        
+}  
+
+.fancybox-close{		
+    position: absolute;
+    left: 470px;
+    top: -15px;
+    cursor: pointer;        
+}
+
+TD.css-btn-eliminar-grid img, div.wastd.css-btn-eliminar-grid img{
+    margin-left: 45%;
+    margin-right: 55%;
+}
+
+TD.css-ver-como-link div div div button, div.wasTd.css-ver-como-link div div div button{  
+    border: none !important;
+    background: none !important;
+    color: #064D8E !important;
+    text-decoration: underline  !important;	
+}
+
+BUTTON.css-ver-como-link{  
+    border: none !important;
+    background: none !important;
+    color: #064D8E !important;
+    text-decoration: underline  !important;	
+}
+
+.btn-primario:hover {
+    background-color: #296192;
+}
+.btn-secundario {
+    color: #FFF;
+    background-color: #607a92;
+    box-shadow: 0 2px 0 #384450;
+    position: relative;
+    left: 22%;
+    width: 120px;
+}
+.btn-secundario:hover {
+    background-color: #556879;
+}
+
+.btn-secundario1 {
+    color: #FFF;
+    background-color: #607a92;
+    box-shadow: 0 2px 0 #384450;
+    position: relative;
+    left: 20%;
+    width: 120px;
+}
+.btn-secundario1:hover {
+    background-color: #556879;
+}
+
+.btn-secundario2 {
+    color: #FFF;
+    background-color: #607a92;
+    box-shadow: 0 2px 0 #384450;
+    position: relative;
+    left: 18%;
+    width: 120px;
+}
+.btn-secundario2:hover {
+    background-color: #556879;
+}
+button:disabled {
+    color: #F5F5F5;
+    background-color: #C7C7C7;
+    box-shadow: 0 2px 0 #ADADAD;
+}
+.btn-link {
+    font-weight: normal;
+    text-decoration: underline;
+    color: #064D8E;
+}
+.btn-link,
+.btn-link:active,
+.btn-link.active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+    background-color: transparent;
+    box-shadow: none;
+}
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+    border-color: transparent;
+}
+.btn-link:hover,
+.btn-link:focus {
+    color: #064D8E;
+    text-decoration: underline;
+}
+.button-no-style {
+    background: transparent;
+    border: transparent;
+    border-radius: 0;
+    margin: 0;
+}
+.button-no-style:focus {
+    box-shadow: none;
+}
+
+div.divBotones{
+	width: 100%;
+	height: 45px;	
+}
+
+td, div.wasTd {
+	margin: 10px;
+	}
+	
+
+/* td div label input, td div label select { */
+td div label input, td div label select, td div label textarea,
+div.wasTd div label input, div.wasTd div label select:not([multiple]), div.wasTd div label textarea {
+	display: inline !important;
+	max-width: 30% !important;
+	font-size: 1.4em;
+	display: flex;
+	height: 36px ;
+	padding: 5px 0px 5px 0px; 
+}
+
+div.fieldGroup div.field input.clonedPicker {
+   	display: inline !important;
+	font-size: 1.4em;
+	height: 36px ;
+	padding: 5px 0px 5px 0px;
+}
+
+div.fieldGroup div.field img.datepickerSelector {
+	height: 32px;
+	width: 32px;
+}
+
+div.fieldGroup div.field input.dateInputHidden{
+	display: none;
+}
+
+div.fieldGroup div.field input.dateInputHidden.readonly{
+	display: inline;
+	font-size: 1.4em;
+	height: 36px ;
+	padding: 5px 0px 5px 0px;
+}
+div.fieldGroup div.field input.dateInput {
+    width: 90px;
+}
+
+
+textarea{
+	width: 100px;
+}
+
+/* td div label span, div.wasTd div label span { */
+/* 	font-size: 13px; */
+/* 	max-width: 30% !important; */
+/* 	display: inline; */
+/* } */
+td div label div p, div.wasTd div label div p{
+	font-size: 13px;
+}
+
+/*div.wasTd button, div.wasTr, div.wasTd div*/ 
+ td button, tr, td div, 
+{ 
+ 	width: 90%;
+}
+
+select.fc-field-error, input.fc-field-error  {
+	border: 1px solid #a94442;
+}
+
+div.fc-field-error{
+	  min-height: 30px;
+}
+.fc-field-error{
+	background-color: #ffeded;
+
+	margin-top: 10px
+}
+.fc-error p {
+	margin: 5px;
+	margin-left: 15px;
+    color: #A00;
+    font-size: 13px;
+}
+.fc-error {
+	background-color: transparent;
+	border-color: transparent;
+}
+input, select {
+	border-radius: 3px;
+	background-color: inherit!important;
+}
+
+
+div.fieldGroup div.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	float: left;
+	margin-top: -30px;
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: none;
+/*afecta el modal de informacion de documentos*/
+}
+
+.exec_field.fc-field-error {
+	background: #ffeded;
+	border: 1px solid #e3c4c4;
+	padding-bottom: 20px !important;
+	padding-top:10px;
+	background-image: url(img/icn-circle-error.png);
+    background-repeat: no-repeat;
+	background-position: 90% 40%;
+}
+
+div.fieldGroup div.field > label > input {
+    width: 50%;
+}
+#errorlist{
+	width: 100%;
+    box-sizing: border-box;
+    position: inherit;
+    background: #ffeded;
+    border: 1px solid #e3c4c4;
+    background-image: url(img/icn-circle-error-lg.png);
+    background-repeat: no-repeat;
+	background-position: 35px center;
+    min-height: 60px;
+    padding: 10px;
+    max-width: 1100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.leftErrorSpan {
+	display: inline-table;
+/* 	width: 15%; */
+    text-align: left !important;
+    margin-left: 115px;
+    font-size: 1.1em;
+	width: auto !important;
+	font-weight: lighter !important;
+    color: #000000 !important;
+    heigth: 50px !important;
+}
+.rightErrorSpan {
+	font-weight: lighter !important;
+	display: inline-table;
+    font-size: 1.1em;
+	heigth: 50px !important;
+}
+
+#errorlistTitle {
+    color: black;    
+    text-align: left;
+    font-weight: normal;
+    margin-left: 115px;
+    margin-top: 20px;
+	margin-bottom: 10px;
+	line-height: 1.1;
+	font-size: 1.2em;
+}
+.errorBlock{
+/* 	margin: 5px; */
+	height: 30px;
+}
+
+div.fc-error>p {
+	margin-left: 237px;
+}
+
+td div input, div.wasTd div input {
+	display: inline;
+}
+
+
+.tabContent{
+	padding: 0 !important;
+}
+
+
+
+
+/*ESTILO DEL ERROR*/
+/* Recuadro con numero de error */
+.box-error {
+    position: absolute;
+    right: 53px;
+    background-color: #ecf3f9;
+    border: 3px solid #bed0e0;
+    border-radius: 2px;
+    padding: 7px 0;
+    width: 180px;
+    top: 5px;
+    bottom: 0;
+    height: 50px;
+    z-index: 10;
+}
+.box-error ul {
+    padding: 0 10px;
+    margin: 0;
+    list-style-type: none;
+    overflow: auto;
+    font-size: 1.1em;
+}
+.box-error-title {
+	font-size: 1.4em;
+    margin-bottom: 0px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.box-error .arrow {
+    position: absolute;
+    top: 42.5%;
+    left: -8px;
+    border-right-color: #bed0e0;
+}
+/* Iconos del box error */
+.icn-arrow-right-sm {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #000;
+}
+.icn-arrow-left-sm {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #bed0e0;
+}
+
+/* Flotación */
+.float-left, .floatIzq {
+    float: left!important;
+}
+.float-right, .floatDer {
+    float: right!important;
+}
+/*Termina el box del error*/
+
+
+div.field label{
+	display: inline!important;
+}
+
+div.flex {
+	display: flex!important;
+}
+
+.flexContainer{
+	display: flex;
+	overflow: none;
+	height: 50px;
+	padding-bottom: 20px!important;	
+}
+
+div.fileInputLabel{
+	display:inline;
+}
+div.fileInputLabel, .asLabelRadio{
+/*     margin-top: 25px; */
+/* 	margin-top: 5px; */
+/*     margin-top: 0; */
+/*     width: auto; */
+/*     height: 15px; */ 	/*cambio radiobutton*/
+    color: black!important;
+}
+
+.asLabelFileinput{
+	font-size: 13px;
+	color: black!important;
+}
+div.fileInputContainer{
+	display: inline-block;
+	background-color: transparent!important;
+}
+/* document style */
+div.document{
+/*     width: 30%; */
+    margin-left: 240px;
+/*     position: absolute; */
+    top: 0px;
+    margin-top:  0px;
+    height: 20px;
+}
+
+div.grid_document{
+
+    margin-left: 0px;
+
+    top: 0px;
+    margin-top:  0px;
+    height: 20px;
+}
+
+
+div.document.no_grid_document{
+	display: inline-block;
+    margin: 0;
+}
+    
+div.document.fc-field-error{
+	top: 10px;
+}
+div.document.grid_document.fc-field-error{
+	background-color: inherit!important;
+}
+
+div.field.exec_field.required.fc-field-error{
+	min-height: 50px;
+}
+div.field.exec_field{
+	min-height: 50px;
+}
+
+
+div.field{
+	width: 100%;
+    min-height: 30px;
+/*     display: flex; */
+/*     flex-wrap: wrap; */
+    align-content: center;
+}
+
+.labelField{
+/* 	position: relative; */
+/*     left: 20%; */
+}
+div.captcha-container{
+    width: 250px;
+    overflow: auto;
+    display: inline-block;
+/* 	display:flex; */
+    vertical-align:  middle;
+}
+div.captcha-container div {
+	/*display:flex;*/
+}
+
+div.wasTr div.wasTd div div input.captchaInput{
+	width: 230px;
+    margin-left: 233px;
+    display: block;
+    padding: 5px;
+    height: 36px;
+}
+
+.reloadCaptcha{
+	width: 32px !important;
+	height: 32px !important;
+}
+
+.audioCaptcha{
+	width: 30px !important;
+	height: 30px !important;
+}
+
+div.gridMinWidth.gridCellRequired p{
+	margin:0;
+}
+/* div.gridMinWidth{ */
+/* 	min-width: 160px; */
+/* } */
+/*CSS PARA PROGRESSBAR*/
+
+.pBarContainer {
+  max-height: 100px;
+  max-width: 1100px;
+  padding: 20px 0px 10px 0px;
+  margin: 0px auto;
+  border: 0;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #141414;
+  box-sizing: content-box;
+}
+
+.progressBar {
+  padding: 0;
+  margin-bottom: 40px;
+  overflow: hidden;
+  background: #F5F5F5;
+  border: 1px solid #ffffff;
+  height: 80px;
+  margin: 0px;
+  max-width: 100%;
+}
+
+.progressBar a {
+  color: #064D8E;
+  word-wrap: break-word;
+}
+
+.progressBar li {
+  position: relative;
+  display: table-cell;
+  float: left;
+  list-style-type: none;
+  padding: 10px 0;
+  padding-left: 60px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.progressBar li:first-child {
+  padding-left: 25px;
+}
+
+.progressBar li:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #F5F5F5;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.progressBar li:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #DCDCDC;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.progressBar li a {
+  text-decoration: none;
+  color: #231F20;
+}
+
+.progressBar li .stepNum {
+  display: block;
+  font-size: 1.7em;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.progressBar li .stepTitle {
+  display: block;
+  line-height: 1.2;
+  font-size: 16px;
+  text-align: center;
+}
+
+.progressBar li.active .stepNum,
+.progressBar li.active .stepTitle {
+  color: #1A2F5A;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.progressBar li.active {
+  background: #e2e9ef;
+}
+
+.progressBar li.active:after {
+  border-left: 30px solid #e2e9ef;
+}
+
+
+.stepContainer{}
+.stepIdContainer{float:left; clear:both;font-size: 26px;}
+.stepIdComplete{float:left; height:26px; width:18px;margin-left: 10px;}
+.stepTitleContainer{float:left; clear:both;}
+
+ul.progressBar li.complete div.stepIdComplete  {
+	background-image: url("img/check.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+
+
+
+span.titImage img{
+	display:none;
+}
+
+#titleContainer{ 
+   max-width: 1100px;
+   margin: 0px auto;
+}
+
+#titleContainer span {
+/* 	display:inline-block; */
+   	width: auto;
+   	height: 100%;
+   	margin-right: 5px
+}
+
+div.titleContainer{
+	display: table;
+  	margin: 0 auto;
+}
+.proTitle {
+	display:none;
+}
+.execTitleSeparator{
+	display:none;
+}
+.taskTitle{
+	font-size: 2em;
+}
+
+frmData{
+	padding-top: 30px;
+}
+td div.gridMinWidth input[type="text"], td div.gridMinWidth select
+{
+	height: 32px;
+    width: 119px;
+}
+td, div.wasTd {
+	position: relative;
+}
+
+/*  div.wastr .wastd div.box-error{ */
+tr.selectableTR td div.box-error{
+	position: absolute;
+    top: 90px;
+    left: 10px;
+    z-index: 10;
+} 
+div.box-error span {
+	color:black;
+}
+
+select{
+	background-color: inherit!important;
+}
+
+.grid-error-class {
+	background-color: #ffeded;
+}
+.button.suggestedAction{
+z-index: 5555;	
+}
+
+
+div.wasTr div.wasTd {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.wasTr, div.wasTd {
+	height: auto;
+}
+
+div.fieldGroup div.gridContainer{
+	display: inline-block;
+} 
+/*afecta al modal de informacion de documentos*/
+
+#mdlDocumentInfo > div.fieldGroup div.gridContainer{
+	display: block !important;
+}
+
+
+div.rightErrorSpan a, div.box-error a{
+	color: rgb(0, 0, 238);
+}
+#frmModalDocumentUpload div.gridContainer{
+	width: 100%;
+}
+
+
+
+.textTooltip{
+    position: absolute;
+    padding-left: 235px;
+}
+#mdlDocumentInfo > .mdlBody{
+	display: grid;
+}
+
+
+
+ 
+.cssgradients button.suggestedAction {	background:#00487a;	color: #ffffff;	border-color: #00487a; border-radius: 3px;    border-style: solid;     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);    box-sizing: border-box;  margin: 0px 10px 0px 10px !important; float: right; width: auto; font-size: 16px; font-weight: 600;}
+.cssgradients button.suggestedAction:hover {	background:#0060a3;	color: #ffffff;	border-color: #00487a; border-radius: 3px;    border-style: solid;     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);    box-sizing: border-box;width: auto; font-size: 16px; font-weight: 600;}
+.no-cssgradients button.suggestedAction {	background:#00487a;	color: #ffffff;	border-color: #00487a; border-radius: 3px;    border-style: solid;     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);    box-sizing: border-box;width: auto; font-size: 16px; font-weight: 600;}
+
+
+div.fncPanel .button .secondaryAction {	background:#eeeeee;	color: #090808;	border-color: #d5d4d4; border-radius: 3px;    border-style: solid;     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);    box-sizing: border-box;  margin: 0px 10px 0px 10px !important; float: right; width: auto; font-size: 16px; font-weight: 600;}
+div.fncPanel .button .secondaryAction:hover {	background:#e1e1e1;	color: #090808;	border-color: #d5d4d4; border-radius: 3px;    border-style: solid;     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);    box-sizing: border-box;width: auto; font-size: 16px; font-weight: 600;}
+
+
+.buttonContainer{
+	position: absolute;
+	padding-left: 220px;	
+	width: initial !important;
+}
+
+div.buttonContainer button{background:#eeeeee;	color: #090808;	border-color: #d5d4d4; border-radius: 3px;    border-style: solid;     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);    box-sizing: border-box;  margin: 0px 10px 0px 10px !important;font-size: 16px; font-weight: 600; font-style: normal;}
+div.buttonContainer button:hover{background:#e1e1e1;	color: #090808;	border-color: #d5d4d4; border-radius: 3px;    border-style: solid;     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);    box-sizing: border-box;  margin: 0px 10px 0px 10px !important;font-size: 16px; font-weight: 600; font-style: normal;}
+
+input:focus, select:focus, input[type="radio"]:focus,textarea:focus, img:focus, button:focus, .document .docIcon:focus, div.gridButton:focus {
+/*:focus, select:focus, input[type|="radio"]:focus, .document .docIcon:focus {*/
+    outline: 3px solid #ffbf47;
+    outline-offset: 0.08rem;
+}
+
+ 
+ #btnLast button:nth-child(1){
+	border:none;
+	background: none;
+	color:#064D8E;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 12px;
+	float: initial;
+	box-shadow: none;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+ 
+
+#btnCloseTab{
+	float: right;
+}
+
+#btnSocialShare{
+	display:none;	
+}
+
+div.fieldGroup div.field label.optionLabel { display: inline;   height: 20px;}
+div.fieldGroup div.field label.optionLabel input {  height: 20px;}
+div.fieldGroup div.field label.optionLabel > * { margin-top: 0px; } 
+div.fieldGroup div.field label.optionLabel span {  height: 20px;  vertical-align: super;}
+
+.verticalElementsContainer > .verticalElement {
+    display: initial;
+}
+
+div.editable-gridBody{
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+div.fieldGroup div.visibility-hidden, div.fieldGroup div.visibility-hidden + div, div.fieldGroup div.visibility-hidden + div + div, div.fieldGroup div.visibility-hidden + div +div +div {visibility:hidden; height: 0px; margin: 0px;}
+
+
+span.monitor-lbl {
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+	width: 220px;
+	text-align: right;
+	display: inline-block;
+	margin-right: 12px;
+	font-size: 16px;
+}
+
+span.monitor-input, div.monitor-area {
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+	width: 220px;
+	text-align: left;
+	display: inline-block;
+	margin-right: 12px;
+	font-size: 16px;
+}
+
+span.multipleSelectLabel{
+	vertical-align:top;
+}
+
+div.leftSectDocMdl div.fieldGroup div.title {
+	
+color: #464646;
+font-weight: bold;
+margin-bottom: 10px;
+border-bottom: 1px solid #cccccc;
+font-size: 1.2em;
+margin-top: 0px;
+float:initial;
+}
+
+div.wasTd div label input[type="checkbox"] {
+    height: unset;
+} 
+
+
+
+
+@media screen and (max-width: 640px) {
+	.formContainer {
+		padding: 20px 30px 30px 30px;
+	}
+	div.fieldGroup div.field label {
+		text-align: left;
+		width: 100%;
+	}
+	div.fieldGroup div.field span.asLabel {
+		text-align: left;
+	}
+	br+input[type=radio] {
+		margin-left: 5px;
+	}
+
+	div.fieldGroup div.field>input, div.fieldGroup div.field select {
+		width: 100%;
+	}
+
+	.exec_field textarea, div.monitor-area {
+		width: 100% !important;
+	}
+		
+	div.fieldGroup div.field label.optionLabel {
+	    display: block;
+	    margin-left: 10px;
+    }
+    
+    div.fieldGroup div.field span.asLabel + label.optionLabel {
+    	margin-top: 10px;
+    }
+
+    div.wasTd div label input[type=text], div.wasTd div label select:not([multiple]) {
+		display: inline !important;
+	 	max-width: initial !important; 
+	 	width: 100% !important;
+		font-size: 1.4em;
+		display: flex;
+		height: 36px ;
+		padding: 5px 0px 5px 0px; 
+		
+	}
+	
+	.buttonContainer {
+     position: relative; 
+     padding-left: initial;
+    width: initial ; 
+	}
+	
+	div.wasTr div.wasTd div div input.captchaInput {
+    margin-left: initial;
+	}
+}
+
+
+@media screen and (min-width: 641px) {
+	.formContainer {
+		padding: 20px 45px 30px 45px;
+	}
+	div.fieldGroup div.field>label>input, div.fieldGroup div.field>label>select
+		{
+		width: 33%;
+	}
+	.exec_field textarea, div.monitor-area {
+		width: 33% !important;
+	}
+	.exec_field div.monitor-area {
+		width: 66% !important;
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: bold;
+		color: #6B6B6B;
+	}
+
+	ol.tree.first-parent, div.monitor-tree {
+		width: 33%;
+	}
+	div.formContainer>table>tbody>tr>td>div.exec_field div.monitor-multiple,
+	div.formContainer>div.wasTable>div.wasTbody>div.wasTr>div.wasTd>div.exec_field div.monitor-multiple { 
+		width:33%;
+	}
+	div.fieldGroup div.field.exec_field_check label {
+/* 		margin-left: 230px; */
+	}
+	/*13------------------------------------------ */	
+}

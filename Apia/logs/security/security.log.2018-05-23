@@ -1,0 +1,28 @@
+[ERROR] [23-05-2018 15:06:17] [APPLICATION_LOGGER] - [2018-05-23,15:06:17](Thread:Security Server Thread-15582625) --> General error: null
+
+[ERROR] [23-05-2018 15:06:17] [APPLICATION_LOGGER] - [2018-05-23,15:06:17](Thread:Security Server Thread-27010463) --> General error: null
+
+[ERROR] [23-05-2018 15:06:40] [APPLICATION_LOGGER] - [2018-05-23,15:06:40](Thread:Security Server Thread-11553572) --> Security error: msgSecSerNoSecurityData
+
+[ERROR] [23-05-2018 15:06:40] [APPLICATION_LOGGER] - [2018-05-23,15:06:40](Thread:Security Server Thread-18745922) --> Security error: msgSecSerNoSecurityData
+
+[ERROR] [23-05-2018 15:06:46] [APPLICATION_LOGGER] - [2018-05-23,15:06:46](Thread:Security Server Thread-14596714) --> General error: null
+
+[ERROR] [23-05-2018 15:06:46] [APPLICATION_LOGGER] - [2018-05-23,15:06:46](Thread:Security Server Thread-30355109) --> General error: null
+
+[ERROR] [23-05-2018 15:07:17] [APPLICATION_LOGGER] - [2018-05-23,15:07:17](Thread:Security Server Thread-29296880) --> General error: null
+
+[ERROR] [23-05-2018 15:07:17] [APPLICATION_LOGGER] - [2018-05-23,15:07:17](Thread:Security Server Thread-19869272) --> General error: null
+
+[ERROR] [23-05-2018 15:07:46] [APPLICATION_LOGGER] - [2018-05-23,15:07:46](Thread:Security Server Thread-13999482) --> General error: null
+
+[ERROR] [23-05-2018 15:07:46] [APPLICATION_LOGGER] - [2018-05-23,15:07:46](Thread:Security Server Thread-17591057) --> General error: null
+
+[FATAL] [23-05-2018 15:42:32] [APPLICATION_LOGGER] - [2018-05-23,15:42:32](Thread:SECURITY SERVER-29397967) --> Error starting the service: Address already in use: JVM_Bind
+
+[FATAL] [23-05-2018 15:54:51] [APPLICATION_LOGGER] - [2018-05-23,15:54:51](Thread:SECURITY SERVER-23178182) --> Error starting the service: Address already in use: JVM_Bind
+
+[FATAL] [23-05-2018 16:01:08] [APPLICATION_LOGGER] - [2018-05-23,16:01:08](Thread:SECURITY SERVER-11368690) --> Error starting the service: Address already in use: JVM_Bind
+
+[FATAL] [23-05-2018 16:05:18] [APPLICATION_LOGGER] - [2018-05-23,16:05:18](Thread:SECURITY SERVER-20416741) --> Error starting the service: Address already in use: JVM_Bind
+

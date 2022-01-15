@@ -1,0 +1,48 @@
+[ERROR] [28-05-2019 07:25:38] [MANAGER_LOGGER] - [2019-05-28,07:25:38](Thread:localhost-startStop-1-1004463242) --> PC-W7
+
+[ERROR] [28-05-2019 07:25:38] [MANAGER_LOGGER] - [2019-05-28,07:25:38](Thread:localhost-startStop-1-1004463242) --> msgSecSerErrorConnectingServer: PC-W7:10000. PC-W7
+
+[ERROR] [28-05-2019 07:25:38] [MANAGER_LOGGER] - [2019-05-28,07:25:38](Thread:localhost-startStop-1-1004463242) --> PC-W7
+
+[ERROR] [28-05-2019 08:44:56] [MANAGER_LOGGER] - [2019-05-28,08:44:56](Thread:localhost-startStop-1-1524833801) --> Connection refused: connect
+
+[ERROR] [28-05-2019 08:44:56] [MANAGER_LOGGER] - [2019-05-28,08:44:56](Thread:localhost-startStop-1-1524833801) --> msgSecSerErrorConnectingServer: rdp-w10-bd-01:10000. Connection refused: connect
+
+[INFO ] [28-05-2019 08:44:56] [MANAGER_LOGGER] - [2019-05-28,08:44:56](Thread:localhost-startStop-1-1524833801) --> Looking for host port with lock. 859861381
+
+[ERROR] [28-05-2019 08:44:57] [MANAGER_LOGGER] - [2019-05-28,08:44:57](Thread:localhost-startStop-1-1524833801) --> Connection refused: connect
+
+[DEBUG] [28-05-2019 08:44:57] [MANAGER_LOGGER] - [2019-05-28,08:44:57](Thread:localhost-startStop-1-1524833801) --> Starting to test port availability
+
+[DEBUG] [28-05-2019 08:44:57] [MANAGER_LOGGER] - [2019-05-28,08:44:57](Thread:localhost-startStop-1-1524833801) --> Testing port rdp-w10-bd-01:10000
+
+[DEBUG] [28-05-2019 08:44:57] [MANAGER_LOGGER] - [2019-05-28,08:44:57](Thread:localhost-startStop-1-1524833801) --> Port free rdp-w10-bd-01:10000
+
+[ERROR] [28-05-2019 08:57:36] [MANAGER_LOGGER] - [2019-05-28,08:57:36](Thread:localhost-startStop-1-1638092796) --> Connection refused: connect
+
+[ERROR] [28-05-2019 08:57:36] [MANAGER_LOGGER] - [2019-05-28,08:57:36](Thread:localhost-startStop-1-1638092796) --> msgSecSerErrorConnectingServer: rdp-w10-bd-01:10000. Connection refused: connect
+
+[INFO ] [28-05-2019 08:57:36] [MANAGER_LOGGER] - [2019-05-28,08:57:36](Thread:localhost-startStop-1-1638092796) --> Looking for host port with lock. 1997062549
+
+[ERROR] [28-05-2019 08:57:38] [MANAGER_LOGGER] - [2019-05-28,08:57:38](Thread:localhost-startStop-1-1638092796) --> Connection refused: connect
+
+[DEBUG] [28-05-2019 08:57:38] [MANAGER_LOGGER] - [2019-05-28,08:57:38](Thread:localhost-startStop-1-1638092796) --> Starting to test port availability
+
+[DEBUG] [28-05-2019 08:57:38] [MANAGER_LOGGER] - [2019-05-28,08:57:38](Thread:localhost-startStop-1-1638092796) --> Testing port rdp-w10-bd-01:10000
+
+[DEBUG] [28-05-2019 08:57:38] [MANAGER_LOGGER] - [2019-05-28,08:57:38](Thread:localhost-startStop-1-1638092796) --> Port free rdp-w10-bd-01:10000
+
+[ERROR] [28-05-2019 10:01:35] [MANAGER_LOGGER] - [2019-05-28,10:01:35](Thread:localhost-startStop-1-1795194600) --> Connection refused: connect
+
+[ERROR] [28-05-2019 10:01:35] [MANAGER_LOGGER] - [2019-05-28,10:01:35](Thread:localhost-startStop-1-1795194600) --> msgSecSerErrorConnectingServer: rdp-w10-bd-01:10000. Connection refused: connect
+
+[INFO ] [28-05-2019 10:01:35] [MANAGER_LOGGER] - [2019-05-28,10:01:35](Thread:localhost-startStop-1-1795194600) --> Looking for host port with lock. 56167745
+
+[ERROR] [28-05-2019 10:01:37] [MANAGER_LOGGER] - [2019-05-28,10:01:37](Thread:localhost-startStop-1-1795194600) --> Connection refused: connect
+
+[DEBUG] [28-05-2019 10:01:37] [MANAGER_LOGGER] - [2019-05-28,10:01:37](Thread:localhost-startStop-1-1795194600) --> Starting to test port availability
+
+[DEBUG] [28-05-2019 10:01:37] [MANAGER_LOGGER] - [2019-05-28,10:01:37](Thread:localhost-startStop-1-1795194600) --> Testing port rdp-w10-bd-01:10000
+
+[DEBUG] [28-05-2019 10:01:37] [MANAGER_LOGGER] - [2019-05-28,10:01:37](Thread:localhost-startStop-1-1795194600) --> Port free rdp-w10-bd-01:10000
+

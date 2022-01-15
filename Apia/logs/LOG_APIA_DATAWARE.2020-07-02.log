@@ -1,0 +1,123 @@
+2020-07-02 07:31:47 
+
+
+2020-07-02 07:31:47 DataWarehouse Update started (2014.04.15)
+2020-07-02 07:31:47 Getting Apia current connection
+2020-07-02 07:31:47 PARAM_DELETE_ALL loaded to: false
+2020-07-02 07:31:47 PARAM_LOAD_ALL_ENV loaded to: true
+2020-07-02 07:31:47 COMMIT_ON_PROCESS_COUNT loaded to: true
+2020-07-02 07:31:47 MAX_HOUR_TO_EXECUTE loaded to: true
+2020-07-02 07:31:47 Processing beforeProcess()
+2020-07-02 07:31:47 End processing beforeProcess()
+2020-07-02 07:31:47 Creating Dataware Data Base connection
+2020-07-02 07:31:47 Loading all environments
+2020-07-02 07:31:47 Build dataware for all environments
+2020-07-02 07:31:47 Get last dataware update date
+2020-07-02 07:31:47 Last reg_date from pro_instance processed: 2019-05-28 09:24:21.821
+2020-07-02 07:31:47 Find new dataware Id
+2020-07-02 07:31:47 Loading dimension: dogma.automatic.export.dao.CodPoolDAO, for environment: All environments
+2020-07-02 07:31:47 Commit data: dogma.automatic.export.dao.CodPoolDAO, for environment: All environments
+2020-07-02 07:31:48 Loading dimension: dogma.automatic.export.dao.CodProcessDAO, for environment: All environments
+2020-07-02 07:31:48 Commit data: dogma.automatic.export.dao.CodProcessDAO, for environment: All environments
+2020-07-02 07:31:48 Loading dimension: dogma.automatic.export.dao.CodTaskDAO, for environment: All environments
+2020-07-02 07:31:48 Commit data: dogma.automatic.export.dao.CodTaskDAO, for environment: All environments
+2020-07-02 07:31:48 Loading dimension: dogma.automatic.export.dao.CodUserDAO, for environment: All environments
+2020-07-02 07:31:48 Commit data: dogma.automatic.export.dao.CodUserDAO, for environment: All environments
+2020-07-02 07:31:48 Loading user codes
+2020-07-02 07:31:48 No user codes to load
+2020-07-02 07:31:48 Getting generic attributes
+2020-07-02 07:31:48 Generic attributes must be loaded for each environment
+2020-07-02 07:31:48 Loading Apia process information
+2020-07-02 07:31:48 Sql used to retrieve new data: [7028 - com.st.db.dataAccess.ConnectionWrapper@40af08] [USER=busClass]SELECT null as dw_pro_id, pi.env_id, pi.pro_id, pi.pro_inst_id_auto as pro_inst_id, pi.pro_inst_create_date as pro_create_date, null as pro_create_year,null as pro_create_sem,null as pro_create_trim,null as pro_create_month_num,null as pro_create_month,null as pro_create_day,null as pro_create_week_day, null as pro_create_hour, null as pro_create_min, null as pro_create_sec, pi.pro_inst_end_date as pro_end_date, null as pro_end_year, null as pro_end_sem, null as pro_end_trim, null as pro_end_month_num, null as pro_end_month, null as pro_end_day, null as pro_end_week_day, null as pro_end_hour, null as pro_end_min, null as pro_end_sec, null as pro_est_end_date, null as pro_est_alarm_date, p.pro_max_duration, p.pro_alert_duration, p.pro_action as pro_type_id, p.cla_tre_id as cla_tree_id, null as pro_ident, pi.pro_inst_name_pre, pi.pro_inst_name_num, pi.pro_inst_name_pos, pi.pro_inst_create_user as pro_create_user, null as pro_end_user, null as pool_id, null as pro_last_action_user, pi.pro_inst_status as pro_status_id, null as pro_status, null as pro_dur_status_id, null as pro_dur_status, null as pro_exe_status, pi.pro_priority as pro_priority_id, null as pro_priority, null as pro_time, null as pro_end_remain, null as pro_est_alarm_remain, null as pro_consec_days, bei.bus_ent_id, null as bus_ent_ident, bei.bus_ent_inst_name_pre, bei.bus_ent_inst_name_num, bei.bus_ent_inst_name_pos, bei.bus_ent_inst_id_auto as bus_ent_inst_id, bei.bus_ent_inst_create_user as bus_ent_create_user, bei.bus_ent_inst_create_data as bus_ent_create_date, null as bus_ent_create_year, null as bus_ent_create_sem,null as bus_ent_create_trim,null as bus_ent_create_month_num,null as bus_ent_create_month, null as bus_ent_create_day,null as bus_ent_create_week_day,null as bus_ent_create_hour,null as bus_ent_create_min, null as bus_ent_create_sec, bes.ent_sta_name as bus_ent_status, null as cust_str_col_1, null as cust_str_col_2, null as cust_str_col_3, null as cust_str_col_4, null as cust_str_col_5, null as cust_str_col_6, null as cust_str_col_7, null as cust_str_col_8, null as cust_str_col_9, null as cust_str_col_10, null as cust_num_col_1, null as cust_num_col_2, null as cust_num_col_3, null as cust_num_col_4, null as cust_num_col_5, pi.reg_date as reg_date FROM pro_instance pi inner join process p on pi.env_id = p.env_id and pi.pro_id = p.pro_id_auto and pi.pro_ver_id = p.pro_ver_id inner join (bus_ent_instance bei left outer join bus_ent_status bes on bes.env_id = bei.env_id and bes.ent_sta_id_auto = bei.ent_sta_id) on bei.env_id = pi.env_id and bei.bus_ent_inst_id_auto = pi.bus_ent_inst_id WHERE  pi.reg_date > '2019-05-28 09:24:21.821' AND  (pi.pro_inst_status = 'R' OR pi.pro_inst_status = 'C' OR pi.pro_inst_status = 'F') order by pi.reg_date
+2020-07-02 07:31:48 Start Apia information convertion
+2020-07-02 07:31:48 End Apia information convertion
+2020-07-02 07:31:48 Updated process (0), tasks (0) and history (0)
+2020-07-02 07:31:48 Completed processes (0) and running processes (0) updated
+2020-07-02 07:31:48 Processing afterProcess()
+2020-07-02 07:31:48 End processing afterProcess()
+2020-07-02 07:31:48 Closing data open statement
+2020-07-02 07:31:48 Closing dataware connection
+2020-07-02 07:31:48 Closing dataware connection
+2020-07-02 07:31:48 DataWarehouse Update end
+2020-07-02 07:32:48 
+
+
+2020-07-02 07:32:48 DataWarehouse Update started (2014.04.15)
+2020-07-02 07:32:48 Getting Apia current connection
+2020-07-02 07:32:48 PARAM_DELETE_ALL loaded to: false
+2020-07-02 07:32:48 PARAM_LOAD_ALL_ENV loaded to: true
+2020-07-02 07:32:48 COMMIT_ON_PROCESS_COUNT loaded to: true
+2020-07-02 07:32:48 MAX_HOUR_TO_EXECUTE loaded to: true
+2020-07-02 07:32:48 Processing beforeProcess()
+2020-07-02 07:32:48 End processing beforeProcess()
+2020-07-02 07:32:48 Creating Dataware Data Base connection
+2020-07-02 07:32:48 Loading all environments
+2020-07-02 07:32:48 Build dataware for all environments
+2020-07-02 07:32:48 Get last dataware update date
+2020-07-02 07:32:48 Last reg_date from pro_instance processed: 2019-05-28 09:24:21.821
+2020-07-02 07:32:48 Find new dataware Id
+2020-07-02 07:32:48 Loading dimension: dogma.automatic.export.dao.CodPoolDAO, for environment: All environments
+2020-07-02 07:32:48 Commit data: dogma.automatic.export.dao.CodPoolDAO, for environment: All environments
+2020-07-02 07:32:48 Loading dimension: dogma.automatic.export.dao.CodProcessDAO, for environment: All environments
+2020-07-02 07:32:48 Commit data: dogma.automatic.export.dao.CodProcessDAO, for environment: All environments
+2020-07-02 07:32:48 Loading dimension: dogma.automatic.export.dao.CodTaskDAO, for environment: All environments
+2020-07-02 07:32:48 Commit data: dogma.automatic.export.dao.CodTaskDAO, for environment: All environments
+2020-07-02 07:32:48 Loading dimension: dogma.automatic.export.dao.CodUserDAO, for environment: All environments
+2020-07-02 07:32:48 Commit data: dogma.automatic.export.dao.CodUserDAO, for environment: All environments
+2020-07-02 07:32:48 Loading user codes
+2020-07-02 07:32:48 No user codes to load
+2020-07-02 07:32:48 Getting generic attributes
+2020-07-02 07:32:48 Generic attributes must be loaded for each environment
+2020-07-02 07:32:48 Loading Apia process information
+2020-07-02 07:32:48 Sql used to retrieve new data: [4696 - com.st.db.dataAccess.ConnectionWrapper@18e406c] [USER=busClass]SELECT null as dw_pro_id, pi.env_id, pi.pro_id, pi.pro_inst_id_auto as pro_inst_id, pi.pro_inst_create_date as pro_create_date, null as pro_create_year,null as pro_create_sem,null as pro_create_trim,null as pro_create_month_num,null as pro_create_month,null as pro_create_day,null as pro_create_week_day, null as pro_create_hour, null as pro_create_min, null as pro_create_sec, pi.pro_inst_end_date as pro_end_date, null as pro_end_year, null as pro_end_sem, null as pro_end_trim, null as pro_end_month_num, null as pro_end_month, null as pro_end_day, null as pro_end_week_day, null as pro_end_hour, null as pro_end_min, null as pro_end_sec, null as pro_est_end_date, null as pro_est_alarm_date, p.pro_max_duration, p.pro_alert_duration, p.pro_action as pro_type_id, p.cla_tre_id as cla_tree_id, null as pro_ident, pi.pro_inst_name_pre, pi.pro_inst_name_num, pi.pro_inst_name_pos, pi.pro_inst_create_user as pro_create_user, null as pro_end_user, null as pool_id, null as pro_last_action_user, pi.pro_inst_status as pro_status_id, null as pro_status, null as pro_dur_status_id, null as pro_dur_status, null as pro_exe_status, pi.pro_priority as pro_priority_id, null as pro_priority, null as pro_time, null as pro_end_remain, null as pro_est_alarm_remain, null as pro_consec_days, bei.bus_ent_id, null as bus_ent_ident, bei.bus_ent_inst_name_pre, bei.bus_ent_inst_name_num, bei.bus_ent_inst_name_pos, bei.bus_ent_inst_id_auto as bus_ent_inst_id, bei.bus_ent_inst_create_user as bus_ent_create_user, bei.bus_ent_inst_create_data as bus_ent_create_date, null as bus_ent_create_year, null as bus_ent_create_sem,null as bus_ent_create_trim,null as bus_ent_create_month_num,null as bus_ent_create_month, null as bus_ent_create_day,null as bus_ent_create_week_day,null as bus_ent_create_hour,null as bus_ent_create_min, null as bus_ent_create_sec, bes.ent_sta_name as bus_ent_status, null as cust_str_col_1, null as cust_str_col_2, null as cust_str_col_3, null as cust_str_col_4, null as cust_str_col_5, null as cust_str_col_6, null as cust_str_col_7, null as cust_str_col_8, null as cust_str_col_9, null as cust_str_col_10, null as cust_num_col_1, null as cust_num_col_2, null as cust_num_col_3, null as cust_num_col_4, null as cust_num_col_5, pi.reg_date as reg_date FROM pro_instance pi inner join process p on pi.env_id = p.env_id and pi.pro_id = p.pro_id_auto and pi.pro_ver_id = p.pro_ver_id inner join (bus_ent_instance bei left outer join bus_ent_status bes on bes.env_id = bei.env_id and bes.ent_sta_id_auto = bei.ent_sta_id) on bei.env_id = pi.env_id and bei.bus_ent_inst_id_auto = pi.bus_ent_inst_id WHERE  pi.reg_date > '2019-05-28 09:24:21.821' AND  (pi.pro_inst_status = 'R' OR pi.pro_inst_status = 'C' OR pi.pro_inst_status = 'F') order by pi.reg_date
+2020-07-02 07:32:48 Start Apia information convertion
+2020-07-02 07:32:48 End Apia information convertion
+2020-07-02 07:32:48 Updated process (0), tasks (0) and history (0)
+2020-07-02 07:32:48 Completed processes (0) and running processes (0) updated
+2020-07-02 07:32:48 Processing afterProcess()
+2020-07-02 07:32:48 End processing afterProcess()
+2020-07-02 07:32:48 Closing data open statement
+2020-07-02 07:32:48 Closing dataware connection
+2020-07-02 07:32:48 Closing dataware connection
+2020-07-02 07:32:48 DataWarehouse Update end
+2020-07-02 07:33:48 
+
+
+2020-07-02 07:33:48 DataWarehouse Update started (2014.04.15)
+2020-07-02 07:33:48 Getting Apia current connection
+2020-07-02 07:33:48 PARAM_DELETE_ALL loaded to: false
+2020-07-02 07:33:48 PARAM_LOAD_ALL_ENV loaded to: true
+2020-07-02 07:33:48 COMMIT_ON_PROCESS_COUNT loaded to: true
+2020-07-02 07:33:48 MAX_HOUR_TO_EXECUTE loaded to: true
+2020-07-02 07:33:48 Processing beforeProcess()
+2020-07-02 07:33:48 End processing beforeProcess()
+2020-07-02 07:33:48 Creating Dataware Data Base connection
+2020-07-02 07:33:48 Loading all environments
+2020-07-02 07:33:48 Build dataware for all environments
+2020-07-02 07:33:48 Get last dataware update date
+2020-07-02 07:33:48 Last reg_date from pro_instance processed: 2019-05-28 09:24:21.821
+2020-07-02 07:33:48 Find new dataware Id
+2020-07-02 07:33:48 Loading dimension: dogma.automatic.export.dao.CodPoolDAO, for environment: All environments
+2020-07-02 07:33:48 Commit data: dogma.automatic.export.dao.CodPoolDAO, for environment: All environments
+2020-07-02 07:33:48 Loading dimension: dogma.automatic.export.dao.CodProcessDAO, for environment: All environments
+2020-07-02 07:33:48 Commit data: dogma.automatic.export.dao.CodProcessDAO, for environment: All environments
+2020-07-02 07:33:48 Loading dimension: dogma.automatic.export.dao.CodTaskDAO, for environment: All environments
+2020-07-02 07:33:48 Commit data: dogma.automatic.export.dao.CodTaskDAO, for environment: All environments
+2020-07-02 07:33:48 Loading dimension: dogma.automatic.export.dao.CodUserDAO, for environment: All environments
+2020-07-02 07:33:49 Commit data: dogma.automatic.export.dao.CodUserDAO, for environment: All environments
+2020-07-02 07:33:49 Loading user codes
+2020-07-02 07:33:49 No user codes to load
+2020-07-02 07:33:49 Getting generic attributes
+2020-07-02 07:33:49 Generic attributes must be loaded for each environment
+2020-07-02 07:33:49 Loading Apia process information
+2020-07-02 07:33:49 Sql used to retrieve new data: [7028 - com.st.db.dataAccess.ConnectionWrapper@545e35] [USER=busClass]SELECT null as dw_pro_id, pi.env_id, pi.pro_id, pi.pro_inst_id_auto as pro_inst_id, pi.pro_inst_create_date as pro_create_date, null as pro_create_year,null as pro_create_sem,null as pro_create_trim,null as pro_create_month_num,null as pro_create_month,null as pro_create_day,null as pro_create_week_day, null as pro_create_hour, null as pro_create_min, null as pro_create_sec, pi.pro_inst_end_date as pro_end_date, null as pro_end_year, null as pro_end_sem, null as pro_end_trim, null as pro_end_month_num, null as pro_end_month, null as pro_end_day, null as pro_end_week_day, null as pro_end_hour, null as pro_end_min, null as pro_end_sec, null as pro_est_end_date, null as pro_est_alarm_date, p.pro_max_duration, p.pro_alert_duration, p.pro_action as pro_type_id, p.cla_tre_id as cla_tree_id, null as pro_ident, pi.pro_inst_name_pre, pi.pro_inst_name_num, pi.pro_inst_name_pos, pi.pro_inst_create_user as pro_create_user, null as pro_end_user, null as pool_id, null as pro_last_action_user, pi.pro_inst_status as pro_status_id, null as pro_status, null as pro_dur_status_id, null as pro_dur_status, null as pro_exe_status, pi.pro_priority as pro_priority_id, null as pro_priority, null as pro_time, null as pro_end_remain, null as pro_est_alarm_remain, null as pro_consec_days, bei.bus_ent_id, null as bus_ent_ident, bei.bus_ent_inst_name_pre, bei.bus_ent_inst_name_num, bei.bus_ent_inst_name_pos, bei.bus_ent_inst_id_auto as bus_ent_inst_id, bei.bus_ent_inst_create_user as bus_ent_create_user, bei.bus_ent_inst_create_data as bus_ent_create_date, null as bus_ent_create_year, null as bus_ent_create_sem,null as bus_ent_create_trim,null as bus_ent_create_month_num,null as bus_ent_create_month, null as bus_ent_create_day,null as bus_ent_create_week_day,null as bus_ent_create_hour,null as bus_ent_create_min, null as bus_ent_create_sec, bes.ent_sta_name as bus_ent_status, null as cust_str_col_1, null as cust_str_col_2, null as cust_str_col_3, null as cust_str_col_4, null as cust_str_col_5, null as cust_str_col_6, null as cust_str_col_7, null as cust_str_col_8, null as cust_str_col_9, null as cust_str_col_10, null as cust_num_col_1, null as cust_num_col_2, null as cust_num_col_3, null as cust_num_col_4, null as cust_num_col_5, pi.reg_date as reg_date FROM pro_instance pi inner join process p on pi.env_id = p.env_id and pi.pro_id = p.pro_id_auto and pi.pro_ver_id = p.pro_ver_id inner join (bus_ent_instance bei left outer join bus_ent_status bes on bes.env_id = bei.env_id and bes.ent_sta_id_auto = bei.ent_sta_id) on bei.env_id = pi.env_id and bei.bus_ent_inst_id_auto = pi.bus_ent_inst_id WHERE  pi.reg_date > '2019-05-28 09:24:21.821' AND  (pi.pro_inst_status = 'R' OR pi.pro_inst_status = 'C' OR pi.pro_inst_status = 'F') order by pi.reg_date
+2020-07-02 07:33:49 Start Apia information convertion
+2020-07-02 07:33:49 End Apia information convertion
+2020-07-02 07:33:49 Updated process (0), tasks (0) and history (0)
+2020-07-02 07:33:49 Completed processes (0) and running processes (0) updated
+2020-07-02 07:33:49 Processing afterProcess()
+2020-07-02 07:33:49 End processing afterProcess()
+2020-07-02 07:33:49 Closing data open statement
+2020-07-02 07:33:49 Closing dataware connection
+2020-07-02 07:33:49 Closing dataware connection
+2020-07-02 07:33:49 DataWarehouse Update end

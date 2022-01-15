@@ -1,0 +1,72 @@
+[ERROR] [23-05-2018 15:30:45] [MANAGER_LOGGER] - [2018-05-23,15:30:45](Thread:ApiaMonitor - SamplerDispatcher-25486435) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:30:45] [MANAGER_LOGGER] - [2018-05-23,15:30:45](Thread:ApiaMonitor - SamplerDispatcher-25486435) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 15:30:46] [MANAGER_LOGGER] - [2018-05-23,15:30:46](Thread:ApiaMonitor - SamplerDispatcher-25486435) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:30:56] [MANAGER_LOGGER] - [2018-05-23,15:30:56](Thread:ApiaMonitor - SamplerDispatcher-25486435) --> Connection is closed.
+
+[ERROR] [23-05-2018 15:42:28] [MANAGER_LOGGER] - [2018-05-23,15:42:28](Thread:localhost-startStop-1-7086522) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:42:28] [MANAGER_LOGGER] - [2018-05-23,15:42:28](Thread:localhost-startStop-1-7086522) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 15:42:29] [MANAGER_LOGGER] - [2018-05-23,15:42:29](Thread:ApiaMonitor - SamplerDispatcher-32937610) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:42:29] [MANAGER_LOGGER] - [2018-05-23,15:42:29](Thread:ApiaMonitor - SamplerDispatcher-32937610) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 15:42:29] [MANAGER_LOGGER] - [2018-05-23,15:42:29](Thread:localhost-startStop-1-7086522) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:42:31] [MANAGER_LOGGER] - [2018-05-23,15:42:31](Thread:ApiaMonitor - SamplerDispatcher-32937610) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:42:41] [MANAGER_LOGGER] - [2018-05-23,15:42:41](Thread:ApiaMonitor - SamplerDispatcher-32937610) --> Connection is closed.
+
+[ERROR] [23-05-2018 15:54:48] [MANAGER_LOGGER] - [2018-05-23,15:54:48](Thread:ApiaMonitor - SamplerDispatcher-24083648) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:54:48] [MANAGER_LOGGER] - [2018-05-23,15:54:48](Thread:ApiaMonitor - SamplerDispatcher-24083648) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 15:54:48] [MANAGER_LOGGER] - [2018-05-23,15:54:48](Thread:localhost-startStop-1-7086522) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:54:49] [MANAGER_LOGGER] - [2018-05-23,15:54:49](Thread:localhost-startStop-1-7086522) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 15:54:49] [MANAGER_LOGGER] - [2018-05-23,15:54:49](Thread:ApiaMonitor - SamplerDispatcher-24083648) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:54:51] [MANAGER_LOGGER] - [2018-05-23,15:54:51](Thread:localhost-startStop-1-7086522) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:54:59] [MANAGER_LOGGER] - [2018-05-23,15:54:59](Thread:ApiaMonitor - SamplerDispatcher-24083648) --> Connection is closed.
+
+[ERROR] [23-05-2018 15:55:01] [MANAGER_LOGGER] - [2018-05-23,15:55:01](Thread:http-nio-8282-exec-7-96269) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:55:01] [MANAGER_LOGGER] - [2018-05-23,15:55:01](Thread:http-nio-8282-exec-7-96269) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 15:55:02] [MANAGER_LOGGER] - [2018-05-23,15:55:02](Thread:http-nio-8282-exec-7-96269) --> Connection refused: connect
+
+[ERROR] [23-05-2018 15:55:12] [MANAGER_LOGGER] - [2018-05-23,15:55:12](Thread:http-nio-8282-exec-7-96269) --> Connection is closed.
+
+[ERROR] [23-05-2018 16:01:03] [MANAGER_LOGGER] - [2018-05-23,16:01:03](Thread:localhost-startStop-1-5802426) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:01:03] [MANAGER_LOGGER] - [2018-05-23,16:01:03](Thread:localhost-startStop-1-5802426) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 16:01:03] [MANAGER_LOGGER] - [2018-05-23,16:01:03](Thread:ApiaMonitor - SamplerDispatcher-1229346) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:01:03] [MANAGER_LOGGER] - [2018-05-23,16:01:03](Thread:ApiaMonitor - SamplerDispatcher-1229346) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 16:01:04] [MANAGER_LOGGER] - [2018-05-23,16:01:04](Thread:localhost-startStop-1-5802426) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:01:06] [MANAGER_LOGGER] - [2018-05-23,16:01:06](Thread:ApiaMonitor - SamplerDispatcher-1229346) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:01:16] [MANAGER_LOGGER] - [2018-05-23,16:01:16](Thread:ApiaMonitor - SamplerDispatcher-1229346) --> Connection is closed.
+
+[ERROR] [23-05-2018 16:05:14] [MANAGER_LOGGER] - [2018-05-23,16:05:14](Thread:localhost-startStop-1-655417) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:05:14] [MANAGER_LOGGER] - [2018-05-23,16:05:14](Thread:localhost-startStop-1-655417) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 16:05:14] [MANAGER_LOGGER] - [2018-05-23,16:05:14](Thread:ApiaMonitor - SamplerDispatcher-11407675) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:05:14] [MANAGER_LOGGER] - [2018-05-23,16:05:14](Thread:ApiaMonitor - SamplerDispatcher-11407675) --> msgSecSerErrorConnectingServer: PC-W7:10000. Connection refused: connect
+
+[ERROR] [23-05-2018 16:05:15] [MANAGER_LOGGER] - [2018-05-23,16:05:15](Thread:localhost-startStop-1-655417) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:05:16] [MANAGER_LOGGER] - [2018-05-23,16:05:16](Thread:ApiaMonitor - SamplerDispatcher-11407675) --> Connection refused: connect
+
+[ERROR] [23-05-2018 16:05:23] [MANAGER_LOGGER] - [2018-05-23,16:05:23](Thread:ApiaMonitor - SamplerDispatcher-11407675) --> Connection is closed.
+

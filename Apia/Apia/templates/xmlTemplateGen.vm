@@ -1,0 +1,29 @@
+#*
+	Template para la generacion de archivos XML para bots AIML.
+	Se espera que la estructura recibida sea del tipo
+		$entryVarName = <String, <String, String>>
+	donde:
+		String contiene la pregunta
+		<String, String> contiene los pares directiva-respuesta. Si directiva == pregunta, el segundo valor es una respuesta.
+			Sino, es la pregunta referenciada.
+*#
+
+#* declaracion de variables *#
+#set($questionDirective = "question")
+#set($referenceDirective = "reference")
+
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+#foreach ($key in $entryVarName.keySet())
+#set ($stringPair = $entryVarName.get($key))
+#set ($directive = $stringPair.keySet().iterator().next())
+	<category>
+		<pattern> $key </pattern>
+#if ($directive == $questionDirective)
+		<template> $stringPair.get($directive) </template>
+#else
+		<template><srai> $stringPair.get($directive) </srai></template>
+#end
+	</category>
+#end
+</aiml>
